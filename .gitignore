@@ -1,0 +1,16 @@
+# CMake
+CMakeCache.txt
+CMakeFiles
+Makefile
+cmake_install.cmake
+build/
+
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+
+# Clion
+*.cbp
+cmake-build-debug/

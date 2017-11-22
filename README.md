@@ -3,7 +3,7 @@
 This is a staging area for pluggable implementation of Immix garbage collector.
 
 ## Building Immix
-1. Make sure you have [CMake](https://cmake.org/) 3.6 or newer installed:
+1. Make sure you have [CMake](https://cmake.org/) 3.2 or newer installed:
   ```sh
   $ cmake -version
   ```

@@ -1,0 +1,973 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Allocator	gc/immix/Allocator.h	/^} Allocator;$/;"	t	typeref:struct:__anon20
+Allocator_Alloc	gc/immix/Allocator.c	/^word_t *Allocator_Alloc(Allocator *allocator, size_t size) {$/;"	f
+Allocator_CanInitCursors	gc/immix/Allocator.c	/^bool Allocator_CanInitCursors(Allocator *allocator) {$/;"	f
+Allocator_Create	gc/immix/Allocator.c	/^Allocator *Allocator_Create(word_t *heapStart, int blockCount) {$/;"	f
+Allocator_InitCursors	gc/immix/Allocator.c	/^void Allocator_InitCursors(Allocator *allocator) {$/;"	f
+Allocator_ShouldGrow	gc/immix/Allocator.c	/^bool Allocator_ShouldGrow(Allocator *allocator) {$/;"	f
+Allocator_firstLineNewBlock	gc/immix/Allocator.c	/^void Allocator_firstLineNewBlock(Allocator *allocator, BlockHeader *block) {$/;"	f
+Allocator_getNextBlock	gc/immix/Allocator.c	/^BlockHeader *Allocator_getNextBlock(Allocator *allocator) {$/;"	f
+Allocator_getNextLine	gc/immix/Allocator.c	/^bool Allocator_getNextLine(Allocator *allocator) {$/;"	f
+Allocator_nextLineRecycled	gc/immix/Allocator.c	/^bool Allocator_nextLineRecycled(Allocator *allocator) {$/;"	f
+Allocator_overflowAllocation	gc/immix/Allocator.c	/^word_t *Allocator_overflowAllocation(Allocator *allocator, size_t size) {$/;"	f
+BITMAP_GRANULARITY	gc/immix/datastructures/Bitmap.h	19;"	d
+BITS_PER_WORD	gc/immix/datastructures/Bitmap.h	15;"	d
+BIT_OFFSET	gc/immix/datastructures/Bitmap.h	17;"	d
+BLOCK_METADATA_ALIGNED_SIZE	gc/immix/Constants.h	32;"	d
+BLOCK_METADATA_SIZE	gc/immix/Constants.h	16;"	d
+BLOCK_METADATA_SIZE_BITS	gc/immix/Constants.h	12;"	d
+BLOCK_SIZE_BITS	gc/immix/Constants.h	9;"	d
+BLOCK_SIZE_IN_BYTES_INVERSE_MASK	gc/immix/Constants.h	39;"	d
+BLOCK_SIZE_IN_BYTES_MASK	gc/immix/Constants.h	38;"	d
+BLOCK_TOTAL_SIZE	gc/immix/Constants.h	15;"	d
+Bitmap	gc/immix/datastructures/Bitmap.h	/^} Bitmap;$/;"	t	typeref:struct:__anon18
+Bitmap_Alloc	gc/immix/datastructures/Bitmap.c	/^Bitmap *Bitmap_Alloc(size_t size, word_t *offset) {$/;"	f
+Bitmap_ClearBit	gc/immix/datastructures/Bitmap.c	/^void Bitmap_ClearBit(Bitmap *bitmap, ubyte_t *addr) {$/;"	f
+Bitmap_GetBit	gc/immix/datastructures/Bitmap.c	/^int Bitmap_GetBit(Bitmap *bitmap, ubyte_t *addr) {$/;"	f
+Bitmap_Grow	gc/immix/datastructures/Bitmap.c	/^void Bitmap_Grow(Bitmap *bitmap, size_t increment) {$/;"	f
+Bitmap_SetBit	gc/immix/datastructures/Bitmap.c	/^void Bitmap_SetBit(Bitmap *bitmap, ubyte_t *addr) {$/;"	f
+BlockFlag	gc/immix/headers/BlockHeader.h	/^} BlockFlag;$/;"	t	typeref:enum:__anon3
+BlockHeader	gc/immix/headers/BlockHeader.h	/^} BlockHeader;$/;"	t	typeref:struct:__anon4
+BlockList	gc/immix/datastructures/BlockList.h	/^} BlockList;$/;"	t	typeref:struct:__anon17
+BlockList_AddBlocksLast	gc/immix/datastructures/BlockList.c	/^void BlockList_AddBlocksLast(BlockList *blockList, BlockHeader *first,$/;"	f
+BlockList_AddLast	gc/immix/datastructures/BlockList.c	/^void BlockList_AddLast(BlockList *blockList, BlockHeader *blockHeader) {$/;"	f
+BlockList_Clear	gc/immix/datastructures/BlockList.c	/^void BlockList_Clear(BlockList *blockList) {$/;"	f
+BlockList_Init	gc/immix/datastructures/BlockList.c	/^void BlockList_Init(BlockList *blockList, word_t *heapStart) {$/;"	f
+BlockList_IsEmpty	gc/immix/datastructures/BlockList.c	/^inline bool BlockList_IsEmpty(BlockList *blockList) {$/;"	f
+BlockList_Print	gc/immix/datastructures/BlockList.c	/^void BlockList_Print(BlockList *blockList) {$/;"	f
+BlockList_RemoveFirstBlock	gc/immix/datastructures/BlockList.c	/^BlockHeader *BlockList_RemoveFirstBlock(BlockList *blockList) {$/;"	f
+Block_BlockHeaderFromLineHeader	gc/immix/headers/BlockHeader.h	/^Block_BlockHeaderFromLineHeader(LineHeader *lineHeader) {$/;"	f
+Block_GetBlockEnd	gc/immix/headers/BlockHeader.h	/^static inline word_t *Block_GetBlockEnd(BlockHeader *blockHeader) {$/;"	f
+Block_GetBlockHeader	gc/immix/headers/BlockHeader.h	/^static inline BlockHeader *Block_GetBlockHeader(word_t *word) {$/;"	f
+Block_GetFirstWord	gc/immix/headers/BlockHeader.h	/^static inline word_t *Block_GetFirstWord(BlockHeader *blockHeader) {$/;"	f
+Block_GetFreeLineHeader	gc/immix/headers/BlockHeader.h	/^static inline FreeLineHeader *Block_GetFreeLineHeader(BlockHeader *blockHeader,$/;"	f
+Block_GetLineAddress	gc/immix/headers/BlockHeader.h	/^static inline word_t *Block_GetLineAddress(BlockHeader *blockHeader,$/;"	f
+Block_GetLineHeader	gc/immix/headers/BlockHeader.h	/^static inline LineHeader *Block_GetLineHeader(BlockHeader *blockHeader,$/;"	f
+Block_GetLineIndexFromLineHeader	gc/immix/headers/BlockHeader.h	/^Block_GetLineIndexFromLineHeader(BlockHeader *blockHeader,$/;"	f
+Block_GetLineIndexFromWord	gc/immix/headers/BlockHeader.h	/^static inline uint32_t Block_GetLineIndexFromWord(BlockHeader *blockHeader,$/;"	f
+Block_GetLineWord	gc/immix/headers/BlockHeader.h	/^static inline word_t *Block_GetLineWord(BlockHeader *blockHeader, int lineIndex,$/;"	f
+Block_IsFree	gc/immix/headers/BlockHeader.h	/^static inline bool Block_IsFree(BlockHeader *blockHeader) {$/;"	f
+Block_IsMarked	gc/immix/headers/BlockHeader.h	/^static inline bool Block_IsMarked(BlockHeader *blockHeader) {$/;"	f
+Block_IsRecyclable	gc/immix/headers/BlockHeader.h	/^static inline bool Block_IsRecyclable(BlockHeader *blockHeader) {$/;"	f
+Block_IsUnavailable	gc/immix/headers/BlockHeader.h	/^static inline bool Block_IsUnavailable(BlockHeader *blockHeader) {$/;"	f
+Block_Mark	gc/immix/headers/BlockHeader.h	/^static inline void Block_Mark(BlockHeader *blockHeader) {$/;"	f
+Block_Print	gc/immix/Block.c	/^void Block_Print(BlockHeader *block) {$/;"	f
+Block_Recycle	gc/immix/Block.c	/^void Block_Recycle(Allocator *allocator, BlockHeader *blockHeader) {$/;"	f
+Block_SetFlag	gc/immix/headers/BlockHeader.h	/^static inline void Block_SetFlag(BlockHeader *blockHeader,$/;"	f
+Block_Unmark	gc/immix/headers/BlockHeader.h	/^static inline void Block_Unmark(BlockHeader *blockHeader) {$/;"	f
+Block_recycleMarkedLine	gc/immix/Block.c	/^void Block_recycleMarkedLine(BlockHeader *blockHeader,$/;"	f
+Block_recycleUnmarkedBlock	gc/immix/Block.c	/^void Block_recycleUnmarkedBlock(Allocator *allocator,$/;"	f
+CHUNK	gc/none/gc.c	12;"	d	file:
+Chunk	gc/immix/LargeAllocator.h	/^struct Chunk {$/;"	s
+Chunk	gc/immix/LargeAllocator.h	/^typedef struct Chunk Chunk;$/;"	t	typeref:struct:Chunk
+DUMMY_GC_FD	gc/none/gc.c	18;"	d	file:
+DUMMY_GC_FD_OFFSET	gc/none/gc.c	19;"	d	file:
+DUMMY_GC_FLAGS	gc/none/gc.c	16;"	d	file:
+DUMMY_GC_PROT	gc/none/gc.c	14;"	d	file:
+ExceptionWrapper	eh.cpp	/^    ExceptionWrapper(void *_obj) : obj(_obj) {}$/;"	f	class:scalanative::ExceptionWrapper
+ExceptionWrapper	eh.cpp	/^class ExceptionWrapper : public std::exception {$/;"	c	namespace:scalanative	file:
+FDBITS	posix/sys/select.c	7;"	d	file:
+FIRST_OBJECT_OFFSET_MASK	gc/immix/headers/LineHeader.h	7;"	d
+FREE_LIST_COUNT	gc/immix/LargeAllocator.h	9;"	d
+Field_t	gc/immix/headers/ObjectHeader.h	/^typedef word_t *Field_t;$/;"	t
+FreeLineHeader	gc/immix/headers/LineHeader.h	/^} FreeLineHeader;$/;"	t	typeref:struct:__anon14
+FreeList	gc/immix/LargeAllocator.h	/^} FreeList;$/;"	t	typeref:struct:__anon1
+GROWTH_RATE	gc/immix/Constants.h	52;"	d
+HEAP_MEM_FD	gc/immix/Heap.c	19;"	d	file:
+HEAP_MEM_FD_OFFSET	gc/immix/Heap.c	20;"	d	file:
+HEAP_MEM_FLAGS	gc/immix/Heap.c	17;"	d	file:
+HEAP_MEM_PROT	gc/immix/Heap.c	15;"	d	file:
+Heap	gc/immix/Heap.h	/^} Heap;$/;"	t	typeref:struct:__anon19
+Heap_Alloc	gc/immix/Heap.c	/^word_t *Heap_Alloc(Heap *heap, uint32_t objectSize) {$/;"	f
+Heap_AllocLarge	gc/immix/Heap.c	/^word_t *Heap_AllocLarge(Heap *heap, uint32_t objectSize) {$/;"	f
+Heap_AllocSmall	gc/immix/Heap.c	/^word_t *Heap_AllocSmall(Heap *heap, uint32_t objectSize) {$/;"	f
+Heap_Collect	gc/immix/Heap.c	/^void Heap_Collect(Heap *heap, Stack *stack) {$/;"	f
+Heap_Create	gc/immix/Heap.c	/^Heap *Heap_Create(size_t initialSize) {$/;"	f
+Heap_Grow	gc/immix/Heap.c	/^void Heap_Grow(Heap *heap, size_t increment) {$/;"	f
+Heap_GrowLarge	gc/immix/Heap.c	/^void Heap_GrowLarge(Heap *heap, size_t increment) {$/;"	f
+Heap_IsWordInHeap	gc/immix/Heap.h	/^static inline bool Heap_IsWordInHeap(Heap *heap, word_t *word) {$/;"	f
+Heap_IsWordInLargeHeap	gc/immix/Heap.h	/^static inline bool Heap_IsWordInLargeHeap(Heap *heap, word_t *word) {$/;"	f
+Heap_IsWordInSmallHeap	gc/immix/Heap.h	/^static inline bool Heap_IsWordInSmallHeap(Heap *heap, word_t *word) {$/;"	f
+Heap_Recycle	gc/immix/Heap.c	/^void Heap_Recycle(Heap *heap) {$/;"	f
+Heap_allocSmallSlow	gc/immix/Heap.c	/^word_t *Heap_allocSmallSlow(Heap *heap, uint32_t size) {$/;"	f
+Heap_exitWithOutOfMemory	gc/immix/Heap.c	/^void Heap_exitWithOutOfMemory() {$/;"	f
+Heap_getMemoryLimit	gc/immix/Heap.c	/^size_t Heap_getMemoryLimit() { return getMemorySize(); }$/;"	f
+Heap_isGrowingPossible	gc/immix/Heap.c	/^bool Heap_isGrowingPossible(Heap *heap, size_t increment) {$/;"	f
+Heap_mapAndAlign	gc/immix/Heap.c	/^word_t *Heap_mapAndAlign(size_t memoryLimit, size_t alignmentSize) {$/;"	f
+IMMIX_ALLOCATOR_H	gc/immix/Allocator.h	2;"	d
+IMMIX_BITMAP_H	gc/immix/datastructures/Bitmap.h	2;"	d
+IMMIX_BLOCKHEADER_H	gc/immix/headers/BlockHeader.h	2;"	d
+IMMIX_BLOCK_H	gc/immix/Block.h	2;"	d
+IMMIX_BLOCLIST_H	gc/immix/datastructures/BlockList.h	2;"	d
+IMMIX_CONSTANTS_H	gc/immix/Constants.h	2;"	d
+IMMIX_GC_TYPES_H	gc/immix/GCTypes.h	2;"	d
+IMMIX_HEAP_H	gc/immix/Heap.h	2;"	d
+IMMIX_LARGEALLOCATOR_H	gc/immix/LargeAllocator.h	2;"	d
+IMMIX_LINEHEADER_H	gc/immix/headers/LineHeader.h	2;"	d
+IMMIX_LINE_H	gc/immix/Line.h	2;"	d
+IMMIX_LOG_H	gc/immix/Log.h	2;"	d
+IMMIX_MARKER_H	gc/immix/Marker.h	2;"	d
+IMMIX_MATHUTILS_H	gc/immix/utils/MathUtils.h	2;"	d
+IMMIX_MEMORY_H	gc/immix/Memory.h	2;"	d
+IMMIX_OBJECTHEADER_H	gc/immix/headers/ObjectHeader.h	2;"	d
+IMMIX_OBJECT_H	gc/immix/Object.h	2;"	d
+IMMIX_STACKOVERFLOWHANDLER_H	gc/immix/StackoverflowHandler.h	2;"	d
+IMMIX_STACKTRACE_H	gc/immix/StackTrace.h	2;"	d
+IMMIX_STACK_H	gc/immix/datastructures/Stack.h	2;"	d
+IMMIX_STATE_H	gc/immix/State.h	2;"	d
+INITIAL_HEAP_SIZE	gc/immix/ImmixGC.c	13;"	d	file:
+INITIAL_STACK_SIZE	gc/immix/datastructures/Stack.h	7;"	d
+INLINE	gc/immix/GCTypes.h	6;"	d
+LARGE_BLOCK_MASK	gc/immix/Constants.h	50;"	d
+LARGE_BLOCK_SIZE	gc/immix/Constants.h	42;"	d
+LARGE_BLOCK_SIZE_BITS	gc/immix/Constants.h	41;"	d
+LARGE_OBJECT_MAX_SIZE_BITS	gc/immix/Constants.h	45;"	d
+LARGE_OBJECT_MIN_SIZE_BITS	gc/immix/Constants.h	44;"	d
+LAST_BLOCK	gc/immix/datastructures/BlockList.h	6;"	d
+LAST_FIELD_OFFSET	gc/immix/Marker.c	17;"	d	file:
+LAST_FIELD_OFFSET	gc/immix/StackoverflowHandler.c	10;"	d	file:
+LAST_HOLE	gc/immix/Block.h	8;"	d
+LINE_COUNT	gc/immix/Constants.h	25;"	d
+LINE_METADATA_SIZE	gc/immix/Constants.h	18;"	d
+LINE_METADATA_SIZE_BITS	gc/immix/Constants.h	13;"	d
+LINE_SIZE	gc/immix/Constants.h	17;"	d
+LINE_SIZE_BITS	gc/immix/Constants.h	10;"	d
+LINE_SIZE_MASK	gc/immix/Constants.h	20;"	d
+LargeAllocator	gc/immix/LargeAllocator.h	/^} LargeAllocator;$/;"	t	typeref:struct:__anon2
+LargeAllocator_AddChunk	gc/immix/LargeAllocator.c	/^void LargeAllocator_AddChunk(LargeAllocator *allocator, Chunk *chunk,$/;"	f
+LargeAllocator_Create	gc/immix/LargeAllocator.c	/^LargeAllocator *LargeAllocator_Create(word_t *offset, size_t size) {$/;"	f
+LargeAllocator_GetBlock	gc/immix/LargeAllocator.c	/^Object *LargeAllocator_GetBlock(LargeAllocator *allocator,$/;"	f
+LargeAllocator_Print	gc/immix/LargeAllocator.c	/^void LargeAllocator_Print(LargeAllocator *alloc) {$/;"	f
+LargeAllocator_Sweep	gc/immix/LargeAllocator.c	/^void LargeAllocator_Sweep(LargeAllocator *allocator) {$/;"	f
+LargeAllocator_chunkAddOffset	gc/immix/LargeAllocator.c	/^Chunk *LargeAllocator_chunkAddOffset(Chunk *chunk, size_t words) {$/;"	f
+LargeAllocator_clearFreeLists	gc/immix/LargeAllocator.c	/^void LargeAllocator_clearFreeLists(LargeAllocator *allocator) {$/;"	f
+LargeAllocator_freeListAddBlockLast	gc/immix/LargeAllocator.c	/^void LargeAllocator_freeListAddBlockLast(FreeList *freeList, Chunk *chunk) {$/;"	f
+LargeAllocator_freeListInit	gc/immix/LargeAllocator.c	/^void LargeAllocator_freeListInit(FreeList *freeList) {$/;"	f
+LargeAllocator_freeListRemoveFirstBlock	gc/immix/LargeAllocator.c	/^Chunk *LargeAllocator_freeListRemoveFirstBlock(FreeList *freeList) {$/;"	f
+LargeAllocator_getChunkSize	gc/immix/LargeAllocator.c	/^static inline size_t LargeAllocator_getChunkSize(Chunk *chunk) {$/;"	f	file:
+LargeAllocator_printFreeList	gc/immix/LargeAllocator.c	/^void LargeAllocator_printFreeList(FreeList *list, int i) {$/;"	f
+LargeAllocator_setChunkSize	gc/immix/LargeAllocator.c	/^static inline void LargeAllocator_setChunkSize(Chunk *chunk, size_t size) {$/;"	f	file:
+LargeAllocator_sizeToLinkedListIndex	gc/immix/LargeAllocator.c	/^inline static int LargeAllocator_sizeToLinkedListIndex(size_t size) {$/;"	f	file:
+LineFlag	gc/immix/headers/LineHeader.h	/^} LineFlag;$/;"	t	typeref:enum:__anon15
+LineHeader	gc/immix/headers/LineHeader.h	/^typedef uint8_t LineHeader;$/;"	t
+Line_ContainsObject	gc/immix/headers/LineHeader.h	/^static inline bool Line_ContainsObject(LineHeader *lineHeader) {$/;"	f
+Line_GetFirstObject	gc/immix/Line.h	/^static INLINE Object *Line_GetFirstObject(LineHeader *lineHeader) {$/;"	f
+Line_GetFirstObjectOffset	gc/immix/headers/LineHeader.h	/^static inline uint8_t Line_GetFirstObjectOffset(LineHeader *lineHeader) {$/;"	f
+Line_IsMarked	gc/immix/headers/LineHeader.h	/^static inline bool Line_IsMarked(LineHeader *lineHeader) {$/;"	f
+Line_Mark	gc/immix/headers/LineHeader.h	/^static inline void Line_Mark(LineHeader *lineHeader) {$/;"	f
+Line_SetEmpty	gc/immix/headers/LineHeader.h	/^static inline void Line_SetEmpty(LineHeader *lineHeader) {$/;"	f
+Line_SetOffset	gc/immix/headers/LineHeader.h	/^static inline void Line_SetOffset(LineHeader *lineHeader, uint8_t offset) {$/;"	f
+Line_Unmark	gc/immix/headers/LineHeader.h	/^static inline void Line_Unmark(LineHeader *lineHeader) {$/;"	f
+Line_Update	gc/immix/Line.h	/^static INLINE void Line_Update(BlockHeader *blockHeader, word_t *objectStart) {$/;"	f
+MAP_ANONYMOUS	gc/none/gc.c	6;"	d	file:
+MAX_BLOCK_SIZE	gc/immix/Constants.h	48;"	d
+MICROS_PER_MILLI	time.c	17;"	d	file:
+MICROS_PER_MILLI	time.c	9;"	d	file:
+MILLIS_PER_SEC	time.c	16;"	d	file:
+MILLIS_PER_SEC	time.c	8;"	d	file:
+MIN_BLOCK_SIZE	gc/immix/Constants.h	47;"	d
+Marker_Mark	gc/immix/Marker.c	/^void Marker_Mark(Heap *heap, Stack *stack) {$/;"	f
+Marker_MarkRoots	gc/immix/Marker.c	/^void Marker_MarkRoots(Heap *heap, Stack *stack) {$/;"	f
+Marker_markConservative	gc/immix/Marker.c	/^void Marker_markConservative(Heap *heap, Stack *stack, word_t *address) {$/;"	f
+Marker_markModules	gc/immix/Marker.c	/^void Marker_markModules(Heap *heap, Stack *stack) {$/;"	f
+Marker_markObject	gc/immix/Marker.c	/^void Marker_markObject(Heap *heap, Stack *stack, Object *object) {$/;"	f
+Marker_markProgramStack	gc/immix/Marker.c	/^void Marker_markProgramStack(Heap *heap, Stack *stack) {$/;"	f
+MathUtils_DivAndRoundUp	gc/immix/utils/MathUtils.h	/^static inline size_t MathUtils_DivAndRoundUp(size_t value, size_t divider) {$/;"	f
+MathUtils_Log2Ceil	gc/immix/utils/MathUtils.h	/^static inline int MathUtils_Log2Ceil(size_t value) {$/;"	f
+MathUtils_RoundToNextMultiple	gc/immix/utils/MathUtils.h	/^static inline size_t MathUtils_RoundToNextMultiple(size_t value,$/;"	f
+MultiplyDeBruijnBitPosition	gc/immix/utils/MathUtils.h	/^static const int MultiplyDeBruijnBitPosition[32] = {$/;"	v
+NAME_MAX	dirent.c	4;"	d	file:
+NDEBUG	gc/immix/Log.h	4;"	d
+NO_RECYCLABLE_LINE	gc/immix/Block.c	11;"	d	file:
+OBJECT_HEADER_SIZE	gc/immix/Constants.h	22;"	d
+OPT_BOOL	optional/re2.cpp	110;"	d	file:
+OPT_BOOL	optional/re2.cpp	91;"	d	file:
+Object	gc/immix/headers/ObjectHeader.h	/^} Object;$/;"	t	typeref:struct:__anon13
+ObjectFlag	gc/immix/headers/ObjectHeader.h	/^} ObjectFlag;$/;"	t	typeref:enum:__anon7
+ObjectHeader	gc/immix/headers/ObjectHeader.h	/^} ObjectHeader;$/;"	t	typeref:struct:__anon8
+ObjectType	gc/immix/headers/ObjectHeader.h	/^} ObjectType;$/;"	t	typeref:enum:__anon6
+Object_ChunkSize	gc/immix/Object.c	/^size_t Object_ChunkSize(Object *object) {$/;"	f
+Object_FromMutatorAddress	gc/immix/headers/ObjectHeader.h	/^static inline Object *Object_FromMutatorAddress(word_t *address) {$/;"	f
+Object_GetLargeObject	gc/immix/Object.c	/^Object *Object_GetLargeObject(LargeAllocator *allocator, word_t *word) {$/;"	f
+Object_GetObject	gc/immix/Object.c	/^Object *Object_GetObject(word_t *word) {$/;"	f
+Object_IsAllocated	gc/immix/headers/ObjectHeader.h	/^static inline bool Object_IsAllocated(ObjectHeader *objectHeader) {$/;"	f
+Object_IsLargeObject	gc/immix/headers/ObjectHeader.h	/^static inline bool Object_IsLargeObject(ObjectHeader *objectHeader) {$/;"	f
+Object_IsMarked	gc/immix/headers/ObjectHeader.h	/^static inline bool Object_IsMarked(ObjectHeader *objectHeader) {$/;"	f
+Object_IsStandardObject	gc/immix/headers/ObjectHeader.h	/^static inline bool Object_IsStandardObject(ObjectHeader *objectHeader) {$/;"	f
+Object_Mark	gc/immix/Object.c	/^void Object_Mark(Object *object) {$/;"	f
+Object_MarkObjectHeader	gc/immix/headers/ObjectHeader.h	/^static inline void Object_MarkObjectHeader(ObjectHeader *objectHeader) {$/;"	f
+Object_NextLargeObject	gc/immix/Object.c	/^Object *Object_NextLargeObject(Object *object) {$/;"	f
+Object_NextObject	gc/immix/Object.c	/^Object *Object_NextObject(Object *object) {$/;"	f
+Object_SetAllocated	gc/immix/headers/ObjectHeader.h	/^static inline void Object_SetAllocated(ObjectHeader *objectHeader) {$/;"	f
+Object_SetFree	gc/immix/headers/ObjectHeader.h	/^static inline void Object_SetFree(ObjectHeader *objectHeader) {$/;"	f
+Object_SetObjectType	gc/immix/headers/ObjectHeader.h	/^static inline void Object_SetObjectType(ObjectHeader *objectHeader,$/;"	f
+Object_SetSize	gc/immix/headers/ObjectHeader.h	/^static inline void Object_SetSize(ObjectHeader *objectHeader, size_t size) {$/;"	f
+Object_Size	gc/immix/headers/ObjectHeader.h	/^static inline size_t Object_Size(ObjectHeader *objectHeader) {$/;"	f
+Object_ToMutatorAddress	gc/immix/headers/ObjectHeader.h	/^static inline word_t *Object_ToMutatorAddress(Object *object) {$/;"	f
+Object_getInLine	gc/immix/Object.c	/^Object *Object_getInLine(BlockHeader *blockHeader, int lineIndex,$/;"	f
+Object_getLargeInnerPointer	gc/immix/Object.c	/^Object *Object_getLargeInnerPointer(LargeAllocator *allocator, word_t *word) {$/;"	f
+PerfectHashMap	perfecthashmap.h	/^typedef struct PerfectHashMap {$/;"	s
+PerfectHashMap	perfecthashmap.h	/^} PerfectHashMap;/;"	t	typeref:struct:PerfectHashMap
+Rtti	gc/immix/headers/ObjectHeader.h	/^} Rtti;$/;"	t	typeref:struct:__anon9
+Stack	gc/immix/datastructures/Stack.h	/^} Stack;$/;"	t	typeref:struct:__anon16
+StackOverflowHandler_CheckForOverflow	gc/immix/StackoverflowHandler.c	/^void StackOverflowHandler_CheckForOverflow() {$/;"	f
+StackOverflowHandler_largeHeapOverflowHeapScan	gc/immix/StackoverflowHandler.c	/^void StackOverflowHandler_largeHeapOverflowHeapScan(Heap *heap, Stack *stack) {$/;"	f
+StackOverflowHandler_overflowBlockScan	gc/immix/StackoverflowHandler.c	/^bool StackOverflowHandler_overflowBlockScan(BlockHeader *block, Heap *heap,$/;"	f
+StackOverflowHandler_overflowMark	gc/immix/StackoverflowHandler.c	/^bool StackOverflowHandler_overflowMark(Heap *heap, Stack *stack,$/;"	f
+StackOverflowHandler_smallHeapOverflowHeapScan	gc/immix/StackoverflowHandler.c	/^bool StackOverflowHandler_smallHeapOverflowHeapScan(Heap *heap, Stack *stack) {$/;"	f
+StackTrace_PrintStackTrace	gc/immix/StackTrace.h	/^void StackTrace_PrintStackTrace() {$/;"	f
+Stack_Alloc	gc/immix/datastructures/Stack.c	/^Stack *Stack_Alloc(size_t size) {$/;"	f
+Stack_DoubleSize	gc/immix/datastructures/Stack.c	/^void Stack_DoubleSize(Stack *stack) {$/;"	f
+Stack_IsEmpty	gc/immix/datastructures/Stack.c	/^bool Stack_IsEmpty(Stack *stack) { return stack->current == 0; }$/;"	f
+Stack_Pop	gc/immix/datastructures/Stack.c	/^Stack_Type Stack_Pop(Stack *stack) {$/;"	f
+Stack_Push	gc/immix/datastructures/Stack.c	/^bool Stack_Push(Stack *stack, Stack_Type word) {$/;"	f
+Stack_Type	gc/immix/datastructures/Stack.h	/^typedef Object *Stack_Type;$/;"	t
+TOTAL_BLOCK_METADATA_SIZE	gc/immix/Constants.h	29;"	d
+TO_CONST_RE2	optional/re2.cpp	157;"	d	file:
+TO_OPT	optional/re2.cpp	76;"	d	file:
+TO_RE2	optional/re2.cpp	156;"	d	file:
+WORDS_IN_BLOCK	gc/immix/Constants.h	36;"	d
+WORDS_IN_LINE	gc/immix/Constants.h	35;"	d
+WORDS_IN_OBJECT_HEADER	gc/immix/Constants.h	23;"	d
+WORD_INVERSE_MASK	gc/immix/Constants.h	7;"	d
+WORD_OFFSET	gc/immix/datastructures/Bitmap.h	16;"	d
+WORD_SIZE	gc/immix/Constants.h	5;"	d
+WORD_SIZE_BITS	gc/immix/Constants.h	4;"	d
+__NETINET_IN_H	posix/netinet/in.h	2;"	d
+__SYS_SOCKET_CONVERSIONS_H	posix/sys/socket_conversions.h	2;"	d
+__SYS_SOCKET_H	posix/sys/socket.h	2;"	d
+__TYPES_H	types.h	2;"	d
+_getBlockFromIndex	gc/immix/datastructures/BlockList.c	/^BlockHeader *_getBlockFromIndex(word_t *heapStart, int32_t index) {$/;"	f
+_getBlockIndex	gc/immix/datastructures/BlockList.c	/^int32_t _getBlockIndex(word_t *heapStart, BlockHeader *blockHeader) {$/;"	f
+_getNextBlock	gc/immix/datastructures/BlockList.c	/^BlockHeader *_getNextBlock(word_t *heapStart, BlockHeader *header) {$/;"	f
+_s6_addr	posix/netinet/in.h	/^    uint8_t _s6_addr[16];$/;"	m	struct:scalanative_in6_addr
+_st_atime	stat.c	/^    scalanative_time_t _st_atime; \/** Time of last access. *\/$/;"	m	struct:scalanative_stat	file:
+_st_ctime	stat.c	/^    scalanative_time_t _st_ctime; \/** Time of last status change. *\/$/;"	m	struct:scalanative_stat	file:
+_st_mtime	stat.c	/^    scalanative_time_t _st_mtime; \/** Time of last data modification. *\/$/;"	m	struct:scalanative_stat	file:
+addressToIndex	gc/immix/datastructures/Bitmap.c	/^size_t addressToIndex(ubyte_t *offset, ubyte_t *addr) {$/;"	f
+ai_addr	posix/netdb.h	/^    struct scalanative_sockaddr *ai_addr; \/* Socket address for socket.  *\/$/;"	m	struct:scalanative_addrinfo	typeref:struct:scalanative_addrinfo::scalanative_sockaddr
+ai_addrlen	posix/netdb.h	/^    socklen_t ai_addrlen;                 \/* Length of socket address.  *\/$/;"	m	struct:scalanative_addrinfo
+ai_canonname	posix/netdb.h	/^    char *ai_canonname; \/* Canonical name for service location.  *\/$/;"	m	struct:scalanative_addrinfo
+ai_family	posix/netdb.h	/^    int ai_family;                        \/* Protocol family for socket.  *\/$/;"	m	struct:scalanative_addrinfo
+ai_flags	posix/netdb.h	/^    int ai_flags;                         \/* Input flags.  *\/$/;"	m	struct:scalanative_addrinfo
+ai_next	posix/netdb.h	/^    void *ai_next;      \/* Pointer to next in list.  *\/$/;"	m	struct:scalanative_addrinfo
+ai_protocol	posix/netdb.h	/^    int ai_protocol;                      \/* Protocol for socket.  *\/$/;"	m	struct:scalanative_addrinfo
+ai_socktype	posix/netdb.h	/^    int ai_socktype;                      \/* Socket type.  *\/$/;"	m	struct:scalanative_addrinfo
+allocator	gc/immix/Heap.h	/^    Allocator *allocator;$/;"	m	struct:__anon19
+bitmap	gc/immix/LargeAllocator.h	/^    Bitmap *bitmap;$/;"	m	struct:__anon2
+block	gc/immix/Allocator.h	/^    BlockHeader *block;$/;"	m	struct:__anon20
+blockCount	gc/immix/Allocator.h	/^    uint64_t blockCount;$/;"	m	struct:__anon20
+block_free	gc/immix/headers/BlockHeader.h	/^    block_free = 0x0,$/;"	e	enum:__anon3
+block_recyclable	gc/immix/headers/BlockHeader.h	/^    block_recyclable = 0x1,$/;"	e	enum:__anon3
+block_unavailable	gc/immix/headers/BlockHeader.h	/^    block_unavailable = 0x2$/;"	e	enum:__anon3
+bottom	gc/immix/datastructures/Stack.h	/^    Stack_Type *bottom;$/;"	m	struct:__anon16
+convert_scalanative_timeval	posix/sys/select.c	/^void convert_scalanative_timeval(struct scalanative_timeval *in,$/;"	f
+current	gc/immix/datastructures/Stack.h	/^    int current;$/;"	m	struct:__anon16
+current	gc/none/gc.c	/^void *current = 0;$/;"	v
+currentOverflowAddress	gc/immix/State.c	/^word_t *currentOverflowAddress = NULL;/;"	v
+cursor	gc/immix/Allocator.h	/^    word_t *cursor;$/;"	m	struct:__anon20
+d_ino	dirent.c	/^    unsigned long long d_ino;  \/** file serial number *\/$/;"	m	struct:scalanative_dirent	file:
+d_name	dirent.c	/^    char d_name[NAME_MAX + 1]; \/** name of entry *\/$/;"	m	struct:scalanative_dirent	file:
+data	optional/re2.h	/^    const char *data;$/;"	m	struct:scalanative_cre2_string_t
+dynDispatchTable	gc/immix/headers/ObjectHeader.h	/^    } dynDispatchTable;$/;"	m	struct:__anon9	typeref:struct:__anon9::__anon12
+dyn_method_count	gc/immix/headers/ObjectHeader.h	/^        int32_t dyn_method_count;$/;"	m	struct:__anon9::__anon12
+dyn_method_keys	gc/immix/headers/ObjectHeader.h	/^        word_t *dyn_method_keys;$/;"	m	struct:__anon9::__anon12
+dyn_method_salt	gc/immix/headers/ObjectHeader.h	/^        word_t *dyn_method_salt;$/;"	m	struct:__anon9::__anon12
+dyn_methods	gc/immix/headers/ObjectHeader.h	/^        word_t *dyn_methods;$/;"	m	struct:__anon9::__anon12
+end	gc/none/gc.c	/^void *end = 0;$/;"	v
+f_bavail	statvfs.c	/^    scalanative_fsblkcnt_t f_bavail; \/** Number of free blocks available to$/;"	m	struct:scalanative_statvfs	file:
+f_bfree	statvfs.c	/^    scalanative_fsblkcnt_t f_bfree;  \/** Total number of free blocks. *\/$/;"	m	struct:scalanative_statvfs	file:
+f_blocks	statvfs.c	/^    scalanative_fsblkcnt_t f_blocks; \/** Total number of blocks on file system$/;"	m	struct:scalanative_statvfs	file:
+f_bsize	statvfs.c	/^    unsigned long f_bsize;           \/** File system block size. *\/$/;"	m	struct:scalanative_statvfs	file:
+f_favail	statvfs.c	/^        f_favail;            \/** Number of file serial numbers available to$/;"	m	struct:scalanative_statvfs	file:
+f_ffree	statvfs.c	/^        f_ffree; \/** Total number of free file serial numbers. *\/$/;"	m	struct:scalanative_statvfs	file:
+f_files	statvfs.c	/^    scalanative_fsfilcnt_t f_files;  \/** Total number of file serial numbers. *\/$/;"	m	struct:scalanative_statvfs	file:
+f_flag	statvfs.c	/^    unsigned long f_flag;    \/** Bit mask of f_flag values. *\/$/;"	m	struct:scalanative_statvfs	file:
+f_frsize	statvfs.c	/^    unsigned long f_frsize;          \/** Fundamental file system block size. *\/$/;"	m	struct:scalanative_statvfs	file:
+f_fsid	statvfs.c	/^    unsigned long f_fsid;    \/** File system ID. *\/$/;"	m	struct:scalanative_statvfs	file:
+f_namemax	statvfs.c	/^    unsigned long f_namemax; \/** Maximum filename length. *\/$/;"	m	struct:scalanative_statvfs	file:
+fd_bits	posix/sys/select.c	/^    long fd_bits[FD_SETSIZE \/ FDBITS];$/;"	m	struct:scalanative_fd_set	file:
+fields	gc/immix/headers/ObjectHeader.h	/^    Field_t fields[0];$/;"	m	struct:__anon13
+first	gc/immix/LargeAllocator.h	/^    Chunk *first;$/;"	m	struct:__anon1
+first	gc/immix/datastructures/BlockList.h	/^    BlockHeader *first;$/;"	m	struct:__anon17
+first	gc/immix/headers/BlockHeader.h	/^        int16_t first;$/;"	m	struct:__anon4::__anon5
+flag	gc/immix/headers/ObjectHeader.h	/^    uint8_t flag;$/;"	m	struct:__anon8
+flags	gc/immix/headers/BlockHeader.h	/^        uint8_t flags;$/;"	m	struct:__anon4::__anon5
+freeBlockCount	gc/immix/Allocator.h	/^    uint64_t freeBlockCount;$/;"	m	struct:__anon20
+freeBlocks	gc/immix/Allocator.h	/^    BlockList freeBlocks;$/;"	m	struct:__anon20
+freeLists	gc/immix/LargeAllocator.h	/^    FreeList freeLists[FREE_LIST_COUNT];$/;"	m	struct:__anon2
+freeMemoryAfterCollection	gc/immix/Allocator.h	/^    size_t freeMemoryAfterCollection;$/;"	m	struct:__anon20
+from	gc/immix/headers/ObjectHeader.h	/^        int32_t from;$/;"	m	struct:__anon9::__anon11
+getMemorySize	gc/immix/Memory.h	/^size_t getMemorySize() {$/;"	f
+gr_gid	grp.c	/^    scalanative_gid_t gr_gid; \/** Numerical group ID. *\/$/;"	m	struct:scalanative_group	file:
+gr_mem	grp.c	/^    char **gr_mem; \/** Pointer to a null-terminated array of character$/;"	m	struct:scalanative_group	file:
+gr_name	grp.c	/^    char *gr_name;            \/** The name of the group. *\/$/;"	m	struct:scalanative_group	file:
+hash	dyndispatch.c	/^inline int hash(int key, int salt) { return (key + (salt * 31)) ^ salt; }$/;"	f
+header	gc/immix/LargeAllocator.h	/^    ObjectHeader header;$/;"	m	struct:Chunk
+header	gc/immix/headers/BlockHeader.h	/^    } header;$/;"	m	struct:__anon4	typeref:struct:__anon4::__anon5
+header	gc/immix/headers/ObjectHeader.h	/^    ObjectHeader header;$/;"	m	struct:__anon13
+heap	gc/immix/State.c	/^Heap *heap = NULL;$/;"	v
+heapEnd	gc/immix/Heap.h	/^    word_t *heapEnd;$/;"	m	struct:__anon19
+heapStart	gc/immix/Allocator.h	/^    word_t *heapStart;$/;"	m	struct:__anon20
+heapStart	gc/immix/Heap.h	/^    word_t *heapStart;$/;"	m	struct:__anon19
+heapStart	gc/immix/datastructures/BlockList.h	/^    word_t *heapStart;$/;"	m	struct:__anon17
+heap_isObjectInHeap	gc/immix/Heap.h	/^static inline bool heap_isObjectInHeap(Heap *heap, Object *object) {$/;"	f
+id	gc/immix/headers/ObjectHeader.h	/^        int32_t id;$/;"	m	struct:__anon9::__anon10
+iov_base	posix/sys/uio.c	/^    void *iov_base; \/** Base address of a memory region for input or output. *\/$/;"	m	struct:scalanative_iovec	file:
+iov_len	posix/sys/uio.c	/^    size_t iov_len; \/** The size of the memory pointed to by iov_base. *\/$/;"	m	struct:scalanative_iovec	file:
+iovec_to_scalanative_iovec	posix/sys/uio.c	/^void iovec_to_scalanative_iovec(struct iovec *orig,$/;"	f
+isWordAligned	gc/immix/Object.c	/^static inline bool isWordAligned(word_t *word) {$/;"	f	file:
+keys	perfecthashmap.h	/^    int *keys;$/;"	m	struct:PerfectHashMap
+kind	gc/immix/headers/ObjectHeader.h	/^        int8_t kind;$/;"	m	struct:__anon9::__anon10
+largeAllocator	gc/immix/Heap.h	/^    LargeAllocator *largeAllocator;$/;"	m	struct:__anon19
+largeBlock	gc/immix/Allocator.h	/^    BlockHeader *largeBlock;$/;"	m	struct:__anon20
+largeCursor	gc/immix/Allocator.h	/^    word_t *largeCursor;$/;"	m	struct:__anon20
+largeHeapEnd	gc/immix/Heap.h	/^    word_t *largeHeapEnd;$/;"	m	struct:__anon19
+largeHeapSize	gc/immix/Heap.h	/^    size_t largeHeapSize;$/;"	m	struct:__anon19
+largeHeapStart	gc/immix/Heap.h	/^    word_t *largeHeapStart;$/;"	m	struct:__anon19
+largeLimit	gc/immix/Allocator.h	/^    word_t *largeLimit;$/;"	m	struct:__anon20
+last	gc/immix/LargeAllocator.h	/^    Chunk *last;$/;"	m	struct:__anon1
+last	gc/immix/datastructures/BlockList.h	/^    BlockHeader *last;$/;"	m	struct:__anon17
+length	optional/re2.h	/^    int length;$/;"	m	struct:scalanative_cre2_string_t
+limit	gc/immix/Allocator.h	/^    word_t *limit;$/;"	m	struct:__anon20
+lineHeaders	gc/immix/headers/BlockHeader.h	/^    LineHeader lineHeaders[LINE_COUNT];$/;"	m	struct:__anon4
+line_contains_object_header	gc/immix/headers/LineHeader.h	/^    line_contains_object_header = 0x2,$/;"	e	enum:__anon15
+line_empty	gc/immix/headers/LineHeader.h	/^    line_empty = 0x0,$/;"	e	enum:__anon15
+line_marked	gc/immix/headers/LineHeader.h	/^    line_marked = 0x1,$/;"	e	enum:__anon15
+log2_floor	gc/immix/utils/MathUtils.h	/^static int log2_floor(size_t v) {$/;"	f
+mark	gc/immix/headers/BlockHeader.h	/^        uint8_t mark;$/;"	m	struct:__anon4::__anon5
+memoryLimit	gc/immix/Heap.h	/^    size_t memoryLimit;$/;"	m	struct:__anon19
+mod	dyndispatch.c	/^inline int mod(int a, int b) {$/;"	f
+name	gc/immix/headers/ObjectHeader.h	/^        word_t *name;$/;"	m	struct:__anon9::__anon10
+nb_words	gc/immix/datastructures/Stack.h	/^    size_t nb_words;$/;"	m	struct:__anon16
+next	gc/immix/LargeAllocator.h	/^    Chunk *next;$/;"	m	struct:Chunk
+next	gc/immix/headers/LineHeader.h	/^    int16_t next;$/;"	m	struct:__anon14
+nextBlock	gc/immix/headers/BlockHeader.h	/^        int32_t nextBlock;$/;"	m	struct:__anon4::__anon5
+obj	eh.cpp	/^    void *obj;$/;"	m	class:scalanative::ExceptionWrapper	file:
+object_allocated	gc/immix/headers/ObjectHeader.h	/^    object_allocated = 0x1,$/;"	e	enum:__anon7
+object_free	gc/immix/headers/ObjectHeader.h	/^    object_free = 0x0,$/;"	e	enum:__anon7
+object_large	gc/immix/headers/ObjectHeader.h	/^    object_large = 0x2,$/;"	e	enum:__anon6
+object_marked	gc/immix/headers/ObjectHeader.h	/^    object_marked = 0x2,$/;"	e	enum:__anon7
+object_standard	gc/immix/headers/ObjectHeader.h	/^    object_standard = 0x1,$/;"	e	enum:__anon6
+offset	gc/immix/LargeAllocator.h	/^    word_t *offset;$/;"	m	struct:__anon2
+offset	gc/immix/datastructures/Bitmap.h	/^    ubyte_t *offset;$/;"	m	struct:__anon18
+overflow	gc/immix/State.c	/^bool overflow = false;$/;"	v
+overflowScanLine	gc/immix/StackoverflowHandler.c	/^bool overflowScanLine(Heap *heap, Stack *stack, BlockHeader *block,$/;"	f
+padding	posix/netinet/in.h	/^    uint32_t padding; \/\/ So that the struct has the same$/;"	m	struct:scalanative_sockaddr_in6
+past	optional/re2.h	/^    long past;  \/* exclusive end index for bytevector *\/$/;"	m	struct:scalanative_cre2_range_t
+pw_dir	pwd.c	/^    char *pw_dir;             \/** Initial working directory. *\/$/;"	m	struct:scalanative_passwd	file:
+pw_gid	pwd.c	/^    scalanative_gid_t pw_gid; \/** Numerical group ID. *\/$/;"	m	struct:scalanative_passwd	file:
+pw_name	pwd.c	/^    char *pw_name;            \/** User's login name. *\/$/;"	m	struct:scalanative_passwd	file:
+pw_shell	pwd.c	/^    char *pw_shell;           \/** Program to use as shell. *\/$/;"	m	struct:scalanative_passwd	file:
+pw_uid	pwd.c	/^    scalanative_uid_t pw_uid; \/** Numerical user ID. *\/$/;"	m	struct:scalanative_passwd	file:
+range	gc/immix/headers/ObjectHeader.h	/^    } range;$/;"	m	struct:__anon9	typeref:struct:__anon9::__anon11
+recycledBlockCount	gc/immix/Allocator.h	/^    uint64_t recycledBlockCount;$/;"	m	struct:__anon20
+recycledBlocks	gc/immix/Allocator.h	/^    BlockList recycledBlocks;$/;"	m	struct:__anon20
+refMapStruct	gc/immix/headers/ObjectHeader.h	/^    int64_t *refMapStruct;$/;"	m	struct:__anon9
+rt	gc/immix/headers/ObjectHeader.h	/^    } rt;$/;"	m	struct:__anon9	typeref:struct:__anon9::__anon10
+rtti	gc/immix/headers/ObjectHeader.h	/^    Rtti *rtti;$/;"	m	struct:__anon13
+s_addr	posix/netinet/in.h	/^    in_addr_t s_addr;$/;"	m	struct:scalanative_in_addr
+sa_data	posix/sys/socket_conversions.h	/^    char sa_data[14];$/;"	m	struct:scalanative_sockaddr
+sa_family	posix/sys/socket_conversions.h	/^    scalanative_sa_family_t sa_family;$/;"	m	struct:scalanative_sockaddr
+salts	perfecthashmap.h	/^    int *salts;$/;"	m	struct:PerfectHashMap
+scalanative	eh.cpp	/^namespace scalanative {$/;"	n	file:
+scalanative_AF_INET	posix/sys/socket.c	/^int scalanative_AF_INET() { return AF_INET; }$/;"	f
+scalanative_AF_INET6	posix/sys/socket.c	/^int scalanative_AF_INET6() { return AF_INET6; }$/;"	f
+scalanative_AF_UNIX	posix/sys/socket.c	/^int scalanative_AF_UNIX() { return AF_UNIX; }$/;"	f
+scalanative_AF_UNSPEC	posix/sys/socket.c	/^int scalanative_AF_UNSPEC() { return AF_UNSPEC; }$/;"	f
+scalanative_AI_ADDRCONFIG	posix/netdb.c	/^int scalanative_AI_ADDRCONFIG() { return AI_ADDRCONFIG; }$/;"	f
+scalanative_AI_CANONNAME	posix/netdb.c	/^int scalanative_AI_CANONNAME() { return AI_CANONNAME; }$/;"	f
+scalanative_AI_NUMERICHOST	posix/netdb.c	/^int scalanative_AI_NUMERICHOST() { return AI_NUMERICHOST; }$/;"	f
+scalanative_AI_NUMERICSERV	posix/netdb.c	/^int scalanative_AI_NUMERICSERV() { return AI_NUMERICSERV; }$/;"	f
+scalanative_AI_PASSIVE	posix/netdb.c	/^int scalanative_AI_PASSIVE() { return AI_PASSIVE; }$/;"	f
+scalanative_AI_V4MAPPED	posix/netdb.c	/^int scalanative_AI_V4MAPPED() { return AI_V4MAPPED; }$/;"	f
+scalanative_FD_CLR	posix/sys/select.c	/^void scalanative_FD_CLR(int fd, struct scalanative_fd_set *set) {$/;"	f
+scalanative_FD_ISSET	posix/sys/select.c	/^int scalanative_FD_ISSET(int fd, struct scalanative_fd_set *set) {$/;"	f
+scalanative_FD_SET	posix/sys/select.c	/^void scalanative_FD_SET(int fd, struct scalanative_fd_set *set) {$/;"	f
+scalanative_FD_SETSIZE	posix/sys/select.c	/^int scalanative_FD_SETSIZE() { return FD_SETSIZE; }$/;"	f
+scalanative_FD_ZERO	posix/sys/select.c	/^void scalanative_FD_ZERO(struct scalanative_fd_set *set) {$/;"	f
+scalanative_FIONREAD	posix/sys/ioctl.c	/^long int scalanative_FIONREAD() { return FIONREAD; }$/;"	f
+scalanative_IN6_IS_ADDR_LINKLOCAL	posix/netinet/in.c	/^int scalanative_IN6_IS_ADDR_LINKLOCAL(struct scalanative_in6_addr *arg) {$/;"	f
+scalanative_IN6_IS_ADDR_LOOPBACK	posix/netinet/in.c	/^int scalanative_IN6_IS_ADDR_LOOPBACK(struct scalanative_in6_addr *arg) {$/;"	f
+scalanative_IN6_IS_ADDR_MC_GLOBAL	posix/netinet/in.c	/^int scalanative_IN6_IS_ADDR_MC_GLOBAL(struct scalanative_in6_addr *arg) {$/;"	f
+scalanative_IN6_IS_ADDR_MC_LINKLOCAL	posix/netinet/in.c	/^int scalanative_IN6_IS_ADDR_MC_LINKLOCAL(struct scalanative_in6_addr *arg) {$/;"	f
+scalanative_IN6_IS_ADDR_MC_NODELOCAL	posix/netinet/in.c	/^int scalanative_IN6_IS_ADDR_MC_NODELOCAL(struct scalanative_in6_addr *arg) {$/;"	f
+scalanative_IN6_IS_ADDR_MC_ORGLOCAL	posix/netinet/in.c	/^int scalanative_IN6_IS_ADDR_MC_ORGLOCAL(struct scalanative_in6_addr *arg) {$/;"	f
+scalanative_IN6_IS_ADDR_MC_SITELOCAL	posix/netinet/in.c	/^int scalanative_IN6_IS_ADDR_MC_SITELOCAL(struct scalanative_in6_addr *arg) {$/;"	f
+scalanative_IN6_IS_ADDR_MULTICAST	posix/netinet/in.c	/^int scalanative_IN6_IS_ADDR_MULTICAST(struct scalanative_in6_addr *arg) {$/;"	f
+scalanative_IN6_IS_ADDR_SITELOCAL	posix/netinet/in.c	/^int scalanative_IN6_IS_ADDR_SITELOCAL(struct scalanative_in6_addr *arg) {$/;"	f
+scalanative_IN6_IS_ADDR_UNSPECIFIED	posix/netinet/in.c	/^int scalanative_IN6_IS_ADDR_UNSPECIFIED(struct scalanative_in6_addr *arg) {$/;"	f
+scalanative_IN6_IS_ADDR_V4COMPAT	posix/netinet/in.c	/^int scalanative_IN6_IS_ADDR_V4COMPAT(struct scalanative_in6_addr *arg) {$/;"	f
+scalanative_IN6_IS_ADDR_V4MAPPED	posix/netinet/in.c	/^int scalanative_IN6_IS_ADDR_V4MAPPED(struct scalanative_in6_addr *arg) {$/;"	f
+scalanative_INADDR_ANY	posix/netinet/in.c	/^uint32_t scalanative_INADDR_ANY() { return INADDR_ANY; }$/;"	f
+scalanative_INADDR_BROADCAST	posix/netinet/in.c	/^uint32_t scalanative_INADDR_BROADCAST() { return INADDR_BROADCAST; }$/;"	f
+scalanative_INET6_ADDRSTRLEN	posix/netinet/in.c	/^int scalanative_INET6_ADDRSTRLEN() { return INET6_ADDRSTRLEN; }$/;"	f
+scalanative_INET_ADDRSTRLEN	posix/netinet/in.c	/^int scalanative_INET_ADDRSTRLEN() { return INET_ADDRSTRLEN; }$/;"	f
+scalanative_IPPROTO_ICMP	posix/netinet/in.c	/^int scalanative_IPPROTO_ICMP() { return IPPROTO_ICMP; }$/;"	f
+scalanative_IPPROTO_IP	posix/netinet/in.c	/^int scalanative_IPPROTO_IP() { return IPPROTO_IP; }$/;"	f
+scalanative_IPPROTO_IPV6	posix/netinet/in.c	/^int scalanative_IPPROTO_IPV6() { return IPPROTO_IPV6; }$/;"	f
+scalanative_IPPROTO_RAW	posix/netinet/in.c	/^int scalanative_IPPROTO_RAW() { return IPPROTO_RAW; }$/;"	f
+scalanative_IPPROTO_TCP	posix/netinet/in.c	/^int scalanative_IPPROTO_TCP() { return IPPROTO_TCP; }$/;"	f
+scalanative_IPPROTO_UDP	posix/netinet/in.c	/^int scalanative_IPPROTO_UDP() { return IPPROTO_UDP; }$/;"	f
+scalanative_IPV6_JOIN_GROUP	posix/netinet/in.c	/^int scalanative_IPV6_JOIN_GROUP() { return IPV6_JOIN_GROUP; }$/;"	f
+scalanative_IPV6_LEAVE_GROUP	posix/netinet/in.c	/^int scalanative_IPV6_LEAVE_GROUP() { return IPV6_LEAVE_GROUP; }$/;"	f
+scalanative_IPV6_MULTICAST_HOPS	posix/netinet/in.c	/^int scalanative_IPV6_MULTICAST_HOPS() { return IPV6_MULTICAST_HOPS; }$/;"	f
+scalanative_IPV6_MULTICAST_IF	posix/netinet/in.c	/^int scalanative_IPV6_MULTICAST_IF() { return IPV6_MULTICAST_IF; }$/;"	f
+scalanative_IPV6_MULTICAST_LOOP	posix/netinet/in.c	/^int scalanative_IPV6_MULTICAST_LOOP() { return IPV6_MULTICAST_LOOP; }$/;"	f
+scalanative_IPV6_UNICAST_HOPS	posix/netinet/in.c	/^int scalanative_IPV6_UNICAST_HOPS() { return IPV6_UNICAST_HOPS; }$/;"	f
+scalanative_IPV6_V6ONLY	posix/netinet/in.c	/^int scalanative_IPV6_V6ONLY() { return IPV6_V6ONLY; }$/;"	f
+scalanative_IP_MULTICAST_IF	posix/netinet/in.c	/^int scalanative_IP_MULTICAST_IF() { return IP_MULTICAST_IF; }$/;"	f
+scalanative_IP_MULTICAST_LOOP	posix/netinet/in.c	/^int scalanative_IP_MULTICAST_LOOP() { return IP_MULTICAST_LOOP; }$/;"	f
+scalanative_IP_TOS	posix/netinet/in.c	/^int scalanative_IP_TOS() { return IP_TOS; }$/;"	f
+scalanative_MSG_CTRUNC	posix/sys/socket.c	/^int scalanative_MSG_CTRUNC() { return MSG_CTRUNC; }$/;"	f
+scalanative_MSG_DONTROUTE	posix/sys/socket.c	/^int scalanative_MSG_DONTROUTE() { return MSG_DONTROUTE; }$/;"	f
+scalanative_MSG_EOR	posix/sys/socket.c	/^int scalanative_MSG_EOR() { return MSG_EOR; }$/;"	f
+scalanative_MSG_OOB	posix/sys/socket.c	/^int scalanative_MSG_OOB() { return MSG_OOB; }$/;"	f
+scalanative_MSG_PEEK	posix/sys/socket.c	/^int scalanative_MSG_PEEK() { return MSG_PEEK; }$/;"	f
+scalanative_MSG_TRUNC	posix/sys/socket.c	/^int scalanative_MSG_TRUNC() { return MSG_TRUNC; }$/;"	f
+scalanative_MSG_WAITALL	posix/sys/socket.c	/^int scalanative_MSG_WAITALL() { return MSG_WAITALL; }$/;"	f
+scalanative_SCM_RIGHTS	posix/sys/socket.c	/^int scalanative_SCM_RIGHTS() { return SCM_RIGHTS; }$/;"	f
+scalanative_SOCK_DGRAM	posix/sys/socket.c	/^int scalanative_SOCK_DGRAM() { return SOCK_DGRAM; }$/;"	f
+scalanative_SOCK_RAW	posix/sys/socket.c	/^int scalanative_SOCK_RAW() { return SOCK_RAW; }$/;"	f
+scalanative_SOCK_SEQPACKET	posix/sys/socket.c	/^int scalanative_SOCK_SEQPACKET() { return SOCK_SEQPACKET; }$/;"	f
+scalanative_SOCK_STREAM	posix/sys/socket.c	/^int scalanative_SOCK_STREAM() { return SOCK_STREAM; }$/;"	f
+scalanative_SOL_SOCKET	posix/sys/socket.c	/^int scalanative_SOL_SOCKET() { return SOL_SOCKET; }$/;"	f
+scalanative_SOMAXCONN	posix/sys/socket.c	/^int scalanative_SOMAXCONN() { return SOMAXCONN; }$/;"	f
+scalanative_SO_ACCEPTCONN	posix/sys/socket.c	/^int scalanative_SO_ACCEPTCONN() { return SO_ACCEPTCONN; }$/;"	f
+scalanative_SO_BROADCAST	posix/sys/socket.c	/^int scalanative_SO_BROADCAST() { return SO_BROADCAST; }$/;"	f
+scalanative_SO_DEBUG	posix/sys/socket.c	/^int scalanative_SO_DEBUG() { return SO_DEBUG; }$/;"	f
+scalanative_SO_DONTROUTE	posix/sys/socket.c	/^int scalanative_SO_DONTROUTE() { return SO_DONTROUTE; }$/;"	f
+scalanative_SO_ERROR	posix/sys/socket.c	/^int scalanative_SO_ERROR() { return SO_ERROR; }$/;"	f
+scalanative_SO_KEEPALIVE	posix/sys/socket.c	/^int scalanative_SO_KEEPALIVE() { return SO_KEEPALIVE; }$/;"	f
+scalanative_SO_LINGER	posix/sys/socket.c	/^int scalanative_SO_LINGER() { return SO_LINGER; }$/;"	f
+scalanative_SO_OOBINLINE	posix/sys/socket.c	/^int scalanative_SO_OOBINLINE() { return SO_OOBINLINE; }$/;"	f
+scalanative_SO_RCVBUF	posix/sys/socket.c	/^int scalanative_SO_RCVBUF() { return SO_RCVBUF; }$/;"	f
+scalanative_SO_RCVLOWAT	posix/sys/socket.c	/^int scalanative_SO_RCVLOWAT() { return SO_RCVLOWAT; }$/;"	f
+scalanative_SO_RCVTIMEO	posix/sys/socket.c	/^int scalanative_SO_RCVTIMEO() { return SO_RCVTIMEO; }$/;"	f
+scalanative_SO_REUSEADDR	posix/sys/socket.c	/^int scalanative_SO_REUSEADDR() { return SO_REUSEADDR; }$/;"	f
+scalanative_SO_SNDBUF	posix/sys/socket.c	/^int scalanative_SO_SNDBUF() { return SO_SNDBUF; }$/;"	f
+scalanative_SO_SNDLOWAT	posix/sys/socket.c	/^int scalanative_SO_SNDLOWAT() { return SO_SNDLOWAT; }$/;"	f
+scalanative_SO_SNDTIMEO	posix/sys/socket.c	/^int scalanative_SO_SNDTIMEO() { return SO_SNDTIMEO; }$/;"	f
+scalanative_SO_TYPE	posix/sys/socket.c	/^int scalanative_SO_TYPE() { return SO_TYPE; }$/;"	f
+scalanative_TCP_NODELAY	posix/netinet/tcp.c	/^int scalanative_TCP_NODELAY() { return TCP_NODELAY; }$/;"	f
+scalanative_UNW_REG_IP	unwind.c	/^int scalanative_UNW_REG_IP() { return UNW_REG_IP; }$/;"	f
+scalanative_Z_ASCII	optional/z.c	/^int scalanative_Z_ASCII() { return Z_ASCII; }$/;"	f
+scalanative_Z_BEST_COMPRESSION	optional/z.c	/^int scalanative_Z_BEST_COMPRESSION() { return Z_BEST_COMPRESSION; }$/;"	f
+scalanative_Z_BEST_SPEED	optional/z.c	/^int scalanative_Z_BEST_SPEED() { return Z_BEST_SPEED; }$/;"	f
+scalanative_Z_BINARY	optional/z.c	/^int scalanative_Z_BINARY() { return Z_BINARY; }$/;"	f
+scalanative_Z_BLOCK	optional/z.c	/^int scalanative_Z_BLOCK() { return Z_BLOCK; }$/;"	f
+scalanative_Z_BUF_ERROR	optional/z.c	/^int scalanative_Z_BUF_ERROR() { return Z_BUF_ERROR; }$/;"	f
+scalanative_Z_DATA_ERROR	optional/z.c	/^int scalanative_Z_DATA_ERROR() { return Z_DATA_ERROR; }$/;"	f
+scalanative_Z_DEFAULT_COMPRESSION	optional/z.c	/^int scalanative_Z_DEFAULT_COMPRESSION() { return Z_DEFAULT_COMPRESSION; }$/;"	f
+scalanative_Z_DEFAULT_STRATEGY	optional/z.c	/^int scalanative_Z_DEFAULT_STRATEGY() { return Z_DEFAULT_STRATEGY; }$/;"	f
+scalanative_Z_DEFLATED	optional/z.c	/^int scalanative_Z_DEFLATED() { return Z_DEFLATED; }$/;"	f
+scalanative_Z_ERRNO	optional/z.c	/^int scalanative_Z_ERRNO() { return Z_ERRNO; }$/;"	f
+scalanative_Z_FILTERED	optional/z.c	/^int scalanative_Z_FILTERED() { return Z_FILTERED; }$/;"	f
+scalanative_Z_FINISH	optional/z.c	/^int scalanative_Z_FINISH() { return Z_FINISH; }$/;"	f
+scalanative_Z_FIXED	optional/z.c	/^int scalanative_Z_FIXED() { return Z_FIXED; }$/;"	f
+scalanative_Z_FULL_FLUSH	optional/z.c	/^int scalanative_Z_FULL_FLUSH() { return Z_FULL_FLUSH; }$/;"	f
+scalanative_Z_HUFFMAN_ONLY	optional/z.c	/^int scalanative_Z_HUFFMAN_ONLY() { return Z_HUFFMAN_ONLY; }$/;"	f
+scalanative_Z_MEM_ERROR	optional/z.c	/^int scalanative_Z_MEM_ERROR() { return Z_MEM_ERROR; }$/;"	f
+scalanative_Z_NEED_DICT	optional/z.c	/^int scalanative_Z_NEED_DICT() { return Z_NEED_DICT; }$/;"	f
+scalanative_Z_NO_COMPRESSION	optional/z.c	/^int scalanative_Z_NO_COMPRESSION() { return Z_NO_COMPRESSION; }$/;"	f
+scalanative_Z_NO_FLUSH	optional/z.c	/^int scalanative_Z_NO_FLUSH() { return Z_NO_FLUSH; }$/;"	f
+scalanative_Z_NULL	optional/z.c	/^int scalanative_Z_NULL() { return Z_NULL; }$/;"	f
+scalanative_Z_OK	optional/z.c	/^int scalanative_Z_OK() { return Z_OK; }$/;"	f
+scalanative_Z_PARTIAL_FLUSH	optional/z.c	/^int scalanative_Z_PARTIAL_FLUSH() { return Z_PARTIAL_FLUSH; }$/;"	f
+scalanative_Z_RLE	optional/z.c	/^int scalanative_Z_RLE() { return Z_RLE; }$/;"	f
+scalanative_Z_STREAM_END	optional/z.c	/^int scalanative_Z_STREAM_END() { return Z_STREAM_END; }$/;"	f
+scalanative_Z_STREAM_ERROR	optional/z.c	/^int scalanative_Z_STREAM_ERROR() { return Z_STREAM_ERROR; }$/;"	f
+scalanative_Z_SYNC_FLUSH	optional/z.c	/^int scalanative_Z_SYNC_FLUSH() { return Z_SYNC_FLUSH; }$/;"	f
+scalanative_Z_TEXT	optional/z.c	/^int scalanative_Z_TEXT() { return Z_TEXT; }$/;"	f
+scalanative_Z_TREES	optional/z.c	/^int scalanative_Z_TREES() { return Z_TREES; }$/;"	f
+scalanative_Z_UNKNOWN	optional/z.c	/^int scalanative_Z_UNKNOWN() { return Z_UNKNOWN; }$/;"	f
+scalanative_Z_VERSION_ERROR	optional/z.c	/^int scalanative_Z_VERSION_ERROR() { return Z_VERSION_ERROR; }$/;"	f
+scalanative_accept	posix/sys/socket.c	/^int scalanative_accept(int socket, struct scalanative_sockaddr *address,$/;"	f
+scalanative_addrinfo	posix/netdb.h	/^struct scalanative_addrinfo {$/;"	s
+scalanative_adler32	optional/z.c	/^uLong scalanative_adler32(uLong adler, Bytef *buf, uInt len) {$/;"	f
+scalanative_adler32_combine	optional/z.c	/^uLong scalanative_adler32_combine(uLong adler1, uLong adler2, z_off_t len2) {$/;"	f
+scalanative_alloc	gc/boehm/gc.c	/^void *scalanative_alloc(void *info, size_t size) {$/;"	f
+scalanative_alloc	gc/immix/ImmixGC.c	/^void *scalanative_alloc(void *info, size_t size) {$/;"	f
+scalanative_alloc	gc/none/gc.c	/^void *scalanative_alloc(void *info, size_t size) {$/;"	f
+scalanative_alloc_atomic	gc/boehm/gc.c	/^void *scalanative_alloc_atomic(void *info, size_t size) {$/;"	f
+scalanative_alloc_atomic	gc/immix/ImmixGC.c	/^void *scalanative_alloc_atomic(void *info, size_t size) {$/;"	f
+scalanative_alloc_atomic	gc/none/gc.c	/^void *scalanative_alloc_atomic(void *info, size_t size) {$/;"	f
+scalanative_alloc_large	gc/boehm/gc.c	/^void *scalanative_alloc_large(void *info, size_t size) {$/;"	f
+scalanative_alloc_large	gc/immix/ImmixGC.c	/^void *scalanative_alloc_large(void *info, size_t size) {$/;"	f
+scalanative_alloc_large	gc/none/gc.c	/^void *scalanative_alloc_large(void *info, size_t size) {$/;"	f
+scalanative_alloc_small	gc/boehm/gc.c	/^void *scalanative_alloc_small(void *info, size_t size) {$/;"	f
+scalanative_alloc_small	gc/immix/ImmixGC.c	/^void *scalanative_alloc_small(void *info, size_t size) {$/;"	f
+scalanative_alloc_small	gc/none/gc.c	/^void *scalanative_alloc_small(void *info, size_t size) {$/;"	f
+scalanative_bind	posix/sys/socket.c	/^int scalanative_bind(int socket, struct scalanative_sockaddr *address,$/;"	f
+scalanative_blkcnt_t	types.h	/^typedef long long scalanative_blkcnt_t;$/;"	t
+scalanative_blksize_t	types.h	/^typedef long scalanative_blksize_t;$/;"	t
+scalanative_cabs	complex.c	/^double scalanative_cabs(double sndc[2]) { return cabs(toDoubleComplex(sndc)); }$/;"	f
+scalanative_cabsf	complex.c	/^float scalanative_cabsf(float snfc[2]) { return cabsf(toFloatComplex(snfc)); }$/;"	f
+scalanative_cacos	complex.c	/^double *scalanative_cacos(double sndc[2], double res[2]) {$/;"	f
+scalanative_cacosf	complex.c	/^float *scalanative_cacosf(float snfc[2], float res[2]) {$/;"	f
+scalanative_cacosh	complex.c	/^double *scalanative_cacosh(double sndc[2], double res[2]) {$/;"	f
+scalanative_cacoshf	complex.c	/^float *scalanative_cacoshf(float snfc[2], float res[2]) {$/;"	f
+scalanative_carg	complex.c	/^double scalanative_carg(double sndc[2]) { return carg(toDoubleComplex(sndc)); }$/;"	f
+scalanative_cargf	complex.c	/^float scalanative_cargf(float snfc[2]) { return cargf(toFloatComplex(snfc)); }$/;"	f
+scalanative_casin	complex.c	/^double *scalanative_casin(double sndc[2], double res[2]) {$/;"	f
+scalanative_casinf	complex.c	/^float *scalanative_casinf(float snfc[2], float res[2]) {$/;"	f
+scalanative_casinh	complex.c	/^double *scalanative_casinh(double sndc[2], double res[2]) {$/;"	f
+scalanative_casinhf	complex.c	/^float *scalanative_casinhf(float snfc[2], float res[2]) {$/;"	f
+scalanative_catan	complex.c	/^double *scalanative_catan(double sndc[2], double res[2]) {$/;"	f
+scalanative_catanf	complex.c	/^float *scalanative_catanf(float snfc[2], float res[2]) {$/;"	f
+scalanative_catanh	complex.c	/^double *scalanative_catanh(double sndc[2], double res[2]) {$/;"	f
+scalanative_catanhf	complex.c	/^float *scalanative_catanhf(float snfc[2], float res[2]) {$/;"	f
+scalanative_ccos	complex.c	/^double *scalanative_ccos(double sndc[2], double res[2]) {$/;"	f
+scalanative_ccosf	complex.c	/^float *scalanative_ccosf(float snfc[2], float res[2]) {$/;"	f
+scalanative_ccosh	complex.c	/^double *scalanative_ccosh(double sndc[2], double res[2]) {$/;"	f
+scalanative_ccoshf	complex.c	/^float *scalanative_ccoshf(float snfc[2], float res[2]) {$/;"	f
+scalanative_cexp	complex.c	/^double *scalanative_cexp(double sndc[2], double res[2]) {$/;"	f
+scalanative_cexpf	complex.c	/^float *scalanative_cexpf(float snfc[2], float res[2]) {$/;"	f
+scalanative_chmod	stat.c	/^int scalanative_chmod(char *pathname, mode_t mode) {$/;"	f
+scalanative_chown	unistd.c	/^int scalanative_chown(char *path, scalanative_uid_t owner,$/;"	f
+scalanative_cimag	complex.c	/^double scalanative_cimag(double sndc[2]) {$/;"	f
+scalanative_cimagf	complex.c	/^float scalanative_cimagf(float snfc[2]) { return cimagf(toFloatComplex(snfc)); }$/;"	f
+scalanative_clog	complex.c	/^double *scalanative_clog(double sndc[2], double res[2]) {$/;"	f
+scalanative_clogf	complex.c	/^float *scalanative_clogf(float snfc[2], float res[2]) {$/;"	f
+scalanative_closedir	dirent.c	/^int scalanative_closedir(DIR *dirp) { return closedir(dirp); }$/;"	f
+scalanative_collect	gc/boehm/gc.c	/^void scalanative_collect() { GC_gcollect(); }$/;"	f
+scalanative_collect	gc/immix/ImmixGC.c	/^void scalanative_collect() { Heap_Collect(heap, stack); }$/;"	f
+scalanative_collect	gc/none/gc.c	/^void scalanative_collect() {}$/;"	f
+scalanative_compress	optional/z.c	/^int scalanative_compress(Bytef *dest, uLongf *destLen, Bytef *source,$/;"	f
+scalanative_compress2	optional/z.c	/^int scalanative_compress2(Bytef *dest, uLongf *destLen, void *source,$/;"	f
+scalanative_compressBound	optional/z.c	/^uLong scalanative_compressBound(uLong sourceLen) {$/;"	f
+scalanative_conj	complex.c	/^double *scalanative_conj(double sndc[2], double res[2]) {$/;"	f
+scalanative_conjf	complex.c	/^float *scalanative_conjf(float snfc[2], float res[2]) {$/;"	f
+scalanative_connect	posix/sys/socket.c	/^int scalanative_connect(int socket, struct scalanative_sockaddr *address,$/;"	f
+scalanative_convert_addrinfo	posix/netdb.c	/^void scalanative_convert_addrinfo(struct addrinfo *in,$/;"	f
+scalanative_convert_in6_addr	posix/netinet/in.c	/^void scalanative_convert_in6_addr(struct scalanative_in6_addr *in,$/;"	f
+scalanative_convert_in_addr	posix/netinet/in.c	/^void scalanative_convert_in_addr(struct scalanative_in_addr *in,$/;"	f
+scalanative_convert_scalanative_addrinfo	posix/netdb.c	/^void scalanative_convert_scalanative_addrinfo(struct scalanative_addrinfo *in,$/;"	f
+scalanative_convert_scalanative_in6_addr	posix/netinet/in.c	/^void scalanative_convert_scalanative_in6_addr($/;"	f
+scalanative_convert_scalanative_in_addr	posix/netinet/in.c	/^void scalanative_convert_scalanative_in_addr(struct in_addr *in,$/;"	f
+scalanative_convert_scalanative_sockaddr	posix/sys/socket_conversions.c	/^int scalanative_convert_scalanative_sockaddr(struct sockaddr *raw_in,$/;"	f
+scalanative_convert_scalanative_sockaddr_in	posix/sys/socket_conversions.c	/^int scalanative_convert_scalanative_sockaddr_in($/;"	f
+scalanative_convert_scalanative_sockaddr_in6	posix/sys/socket_conversions.c	/^int scalanative_convert_scalanative_sockaddr_in6($/;"	f
+scalanative_convert_scalanative_sockaddr_storage	posix/sys/socket_conversions.c	/^int scalanative_convert_scalanative_sockaddr_storage($/;"	f
+scalanative_convert_sockaddr	posix/sys/socket_conversions.c	/^int scalanative_convert_sockaddr(struct scalanative_sockaddr *raw_in,$/;"	f
+scalanative_convert_sockaddr_in	posix/sys/socket_conversions.c	/^int scalanative_convert_sockaddr_in(struct scalanative_sockaddr_in *in,$/;"	f
+scalanative_convert_sockaddr_in6	posix/sys/socket_conversions.c	/^int scalanative_convert_sockaddr_in6(struct scalanative_sockaddr_in6 *in,$/;"	f
+scalanative_convert_sockaddr_storage	posix/sys/socket_conversions.c	/^int scalanative_convert_sockaddr_storage($/;"	f
+scalanative_cpow	complex.c	/^double *scalanative_cpow(double x[2], double y[2], double res[2]) {$/;"	f
+scalanative_cpowf	complex.c	/^float *scalanative_cpowf(float x[2], float y[2], float res[2]) {$/;"	f
+scalanative_cproj	complex.c	/^double *scalanative_cproj(double sndc[2], double res[2]) {$/;"	f
+scalanative_cprojf	complex.c	/^float *scalanative_cprojf(float snfc[2], float res[2]) {$/;"	f
+scalanative_crc32	optional/z.c	/^uLong scalanative_crc32(uLong crc, Bytef *buf, uInt len) {$/;"	f
+scalanative_crc32_combine	optional/z.c	/^uLong scalanative_crc32_combine(uLong crc1, uLong crc2, z_off_t len2) {$/;"	f
+scalanative_cre2_ANCHOR_BOTH	optional/re2.h	/^    scalanative_cre2_ANCHOR_BOTH = 3$/;"	e	enum:scalanative_cre2_anchor_t
+scalanative_cre2_ANCHOR_START	optional/re2.h	/^    scalanative_cre2_ANCHOR_START = 2,$/;"	e	enum:scalanative_cre2_anchor_t
+scalanative_cre2_ERROR_BAD_CHAR_CLASS	optional/re2.h	/^    scalanative_cre2_ERROR_BAD_CHAR_CLASS,     \/* bad character class *\/$/;"	e	enum:scalanative_cre2_error_code_t
+scalanative_cre2_ERROR_BAD_CHAR_RANGE	optional/re2.h	/^    scalanative_cre2_ERROR_BAD_CHAR_RANGE,     \/* bad character class range *\/$/;"	e	enum:scalanative_cre2_error_code_t
+scalanative_cre2_ERROR_BAD_ESCAPE	optional/re2.h	/^    scalanative_cre2_ERROR_BAD_ESCAPE,         \/* bad escape sequence *\/$/;"	e	enum:scalanative_cre2_error_code_t
+scalanative_cre2_ERROR_BAD_NAMED_CAPTURE	optional/re2.h	/^    scalanative_cre2_ERROR_BAD_NAMED_CAPTURE, \/* bad named capture group *\/$/;"	e	enum:scalanative_cre2_error_code_t
+scalanative_cre2_ERROR_BAD_PERL_OP	optional/re2.h	/^    scalanative_cre2_ERROR_BAD_PERL_OP,     \/* bad perl operator *\/$/;"	e	enum:scalanative_cre2_error_code_t
+scalanative_cre2_ERROR_BAD_UTF8	optional/re2.h	/^    scalanative_cre2_ERROR_BAD_UTF8,        \/* invalid UTF-8 in regexp *\/$/;"	e	enum:scalanative_cre2_error_code_t
+scalanative_cre2_ERROR_INTERNAL	optional/re2.h	/^    scalanative_cre2_ERROR_INTERNAL,           \/* unexpected error *\/$/;"	e	enum:scalanative_cre2_error_code_t
+scalanative_cre2_ERROR_MISSING_BRACKET	optional/re2.h	/^    scalanative_cre2_ERROR_MISSING_BRACKET,    \/* missing closing ] *\/$/;"	e	enum:scalanative_cre2_error_code_t
+scalanative_cre2_ERROR_MISSING_PAREN	optional/re2.h	/^    scalanative_cre2_ERROR_MISSING_PAREN,      \/* missing closing ) *\/$/;"	e	enum:scalanative_cre2_error_code_t
+scalanative_cre2_ERROR_PATTERN_TOO_LARGE	optional/re2.h	/^    scalanative_cre2_ERROR_PATTERN_TOO_LARGE, \/* pattern too large (compile$/;"	e	enum:scalanative_cre2_error_code_t
+scalanative_cre2_ERROR_REPEAT_ARGUMENT	optional/re2.h	/^    scalanative_cre2_ERROR_REPEAT_ARGUMENT, \/* repeat argument missing, e.g. "*"$/;"	e	enum:scalanative_cre2_error_code_t
+scalanative_cre2_ERROR_REPEAT_OP	optional/re2.h	/^    scalanative_cre2_ERROR_REPEAT_OP,       \/* bad repetition operator *\/$/;"	e	enum:scalanative_cre2_error_code_t
+scalanative_cre2_ERROR_REPEAT_SIZE	optional/re2.h	/^    scalanative_cre2_ERROR_REPEAT_SIZE,     \/* bad repetition argument *\/$/;"	e	enum:scalanative_cre2_error_code_t
+scalanative_cre2_ERROR_TRAILING_BACKSLASH	optional/re2.h	/^    scalanative_cre2_ERROR_TRAILING_BACKSLASH, \/* trailing \\ at end of regexp *\/$/;"	e	enum:scalanative_cre2_error_code_t
+scalanative_cre2_H	optional/re2.h	47;"	d
+scalanative_cre2_Latin1	optional/re2.h	/^    scalanative_cre2_Latin1 = 2$/;"	e	enum:scalanative_cre2_encoding_t
+scalanative_cre2_NO_ERROR	optional/re2.h	/^    scalanative_cre2_NO_ERROR = 0,$/;"	e	enum:scalanative_cre2_error_code_t
+scalanative_cre2_UNANCHORED	optional/re2.h	/^    scalanative_cre2_UNANCHORED = 1,$/;"	e	enum:scalanative_cre2_anchor_t
+scalanative_cre2_UNKNOWN	optional/re2.h	/^    scalanative_cre2_UNKNOWN = 0, \/* should never happen *\/$/;"	e	enum:scalanative_cre2_encoding_t
+scalanative_cre2_UTF8	optional/re2.h	/^    scalanative_cre2_UTF8 = 1,$/;"	e	enum:scalanative_cre2_encoding_t
+scalanative_cre2_anchor_t	optional/re2.h	/^typedef enum scalanative_cre2_anchor_t {$/;"	g
+scalanative_cre2_anchor_t	optional/re2.h	/^} scalanative_cre2_anchor_t;$/;"	t	typeref:enum:scalanative_cre2_anchor_t
+scalanative_cre2_decl	optional/re2.h	58;"	d
+scalanative_cre2_delete	optional/re2.cpp	/^void scalanative_cre2_delete(scalanative_cre2_regexp_t *re) {$/;"	f
+scalanative_cre2_encoding_t	optional/re2.h	/^typedef enum scalanative_cre2_encoding_t {$/;"	g
+scalanative_cre2_encoding_t	optional/re2.h	/^} scalanative_cre2_encoding_t;$/;"	t	typeref:enum:scalanative_cre2_encoding_t
+scalanative_cre2_error_arg	optional/re2.cpp	/^void scalanative_cre2_error_arg(const scalanative_cre2_regexp_t *re,$/;"	f
+scalanative_cre2_error_code	optional/re2.cpp	/^int scalanative_cre2_error_code(const scalanative_cre2_regexp_t *re) {$/;"	f
+scalanative_cre2_error_code_t	optional/re2.h	/^typedef enum scalanative_cre2_error_code_t {$/;"	g
+scalanative_cre2_error_code_t	optional/re2.h	/^} scalanative_cre2_error_code_t;$/;"	t	typeref:enum:scalanative_cre2_error_code_t
+scalanative_cre2_error_string	optional/re2.cpp	/^const char *scalanative_cre2_error_string(const scalanative_cre2_regexp_t *re) {$/;"	f
+scalanative_cre2_find_named_capturing_groups	optional/re2.cpp	/^int scalanative_cre2_find_named_capturing_groups($/;"	f
+scalanative_cre2_global_replace_re	optional/re2.cpp	/^int scalanative_cre2_global_replace_re($/;"	f
+scalanative_cre2_match	optional/re2.cpp	/^int scalanative_cre2_match(const scalanative_cre2_regexp_t *re,$/;"	f
+scalanative_cre2_new	optional/re2.cpp	/^scalanative_cre2_new(const char *pattern, int pattern_len,$/;"	f
+scalanative_cre2_num_capturing_groups	optional/re2.cpp	/^int scalanative_cre2_num_capturing_groups(const scalanative_cre2_regexp_t *re) {$/;"	f
+scalanative_cre2_opt_delete	optional/re2.cpp	/^void scalanative_cre2_opt_delete(scalanative_cre2_options_t *opt) {$/;"	f
+scalanative_cre2_opt_encoding	optional/re2.cpp	/^scalanative_cre2_opt_encoding(scalanative_cre2_options_t *opt) {$/;"	f
+scalanative_cre2_opt_max_mem	optional/re2.cpp	/^int64_t scalanative_cre2_opt_max_mem(scalanative_cre2_options_t *opt) {$/;"	f
+scalanative_cre2_opt_new	optional/re2.cpp	/^scalanative_cre2_options_t *scalanative_cre2_opt_new(void) {$/;"	f
+scalanative_cre2_opt_set_encoding	optional/re2.cpp	/^void scalanative_cre2_opt_set_encoding(scalanative_cre2_options_t *opt,$/;"	f
+scalanative_cre2_opt_set_max_mem	optional/re2.cpp	/^void scalanative_cre2_opt_set_max_mem(scalanative_cre2_options_t *opt,$/;"	f
+scalanative_cre2_options_t	optional/re2.h	/^typedef void scalanative_cre2_options_t;$/;"	t
+scalanative_cre2_quote_meta	optional/re2.cpp	/^int scalanative_cre2_quote_meta(scalanative_cre2_string_t *quoted,$/;"	f
+scalanative_cre2_range_t	optional/re2.h	/^typedef struct scalanative_cre2_range_t {$/;"	s
+scalanative_cre2_range_t	optional/re2.h	/^} scalanative_cre2_range_t;$/;"	t	typeref:struct:scalanative_cre2_range_t
+scalanative_cre2_regexp_t	optional/re2.h	/^typedef void scalanative_cre2_regexp_t;$/;"	t
+scalanative_cre2_replace_re	optional/re2.cpp	/^int scalanative_cre2_replace_re(scalanative_cre2_regexp_t *rex,$/;"	f
+scalanative_cre2_string_t	optional/re2.h	/^typedef struct scalanative_cre2_string_t {$/;"	s
+scalanative_cre2_string_t	optional/re2.h	/^} scalanative_cre2_string_t;$/;"	t	typeref:struct:scalanative_cre2_string_t
+scalanative_creal	complex.c	/^double scalanative_creal(double sndc[2]) {$/;"	f
+scalanative_crealf	complex.c	/^float scalanative_crealf(float snfc[2]) { return crealf(toFloatComplex(snfc)); }$/;"	f
+scalanative_csin	complex.c	/^double *scalanative_csin(double sndc[2], double res[2]) {$/;"	f
+scalanative_csinf	complex.c	/^float *scalanative_csinf(float snfc[2], float res[2]) {$/;"	f
+scalanative_csinh	complex.c	/^double *scalanative_csinh(double sndc[2], double res[2]) {$/;"	f
+scalanative_csinhf	complex.c	/^float *scalanative_csinhf(float snfc[2], float res[2]) {$/;"	f
+scalanative_csqrt	complex.c	/^double *scalanative_csqrt(double sndc[2], double res[2]) {$/;"	f
+scalanative_csqrtf	complex.c	/^float *scalanative_csqrtf(float snfc[2], float res[2]) {$/;"	f
+scalanative_ctan	complex.c	/^double *scalanative_ctan(double sndc[2], double res[2]) {$/;"	f
+scalanative_ctanf	complex.c	/^float *scalanative_ctanf(float snfc[2], float res[2]) {$/;"	f
+scalanative_ctanh	complex.c	/^double *scalanative_ctanh(double sndc[2], double res[2]) {$/;"	f
+scalanative_ctanhf	complex.c	/^float *scalanative_ctanhf(float snfc[2], float res[2]) {$/;"	f
+scalanative_current_time_millis	time.c	/^long long scalanative_current_time_millis() {$/;"	f
+scalanative_deflate	optional/z.c	/^int scalanative_deflate(z_streamp strm, int flush) {$/;"	f
+scalanative_deflateBound	optional/z.c	/^uLong scalanative_deflateBound(z_streamp strm, uLong sourceLen) {$/;"	f
+scalanative_deflateCopy	optional/z.c	/^int scalanative_deflateCopy(z_streamp dest, z_streamp source) {$/;"	f
+scalanative_deflateEnd	optional/z.c	/^int scalanative_deflateEnd(z_streamp strm) { return deflateEnd(strm); }$/;"	f
+scalanative_deflateInit	optional/z.c	/^int scalanative_deflateInit(z_streamp strm, int level) {$/;"	f
+scalanative_deflateInit2	optional/z.c	/^int scalanative_deflateInit2(z_streamp strm, int level, int method,$/;"	f
+scalanative_deflateParams	optional/z.c	/^int scalanative_deflateParams(z_streamp strm, int level, int strategy) {$/;"	f
+scalanative_deflatePrime	optional/z.c	/^int scalanative_deflatePrime(z_streamp strm, int bits, int value) {$/;"	f
+scalanative_deflateReset	optional/z.c	/^int scalanative_deflateReset(z_streamp strm) { return deflateReset(strm); }$/;"	f
+scalanative_deflateSetDictionary	optional/z.c	/^int scalanative_deflateSetDictionary(z_streamp strm, Bytef *dictionary,$/;"	f
+scalanative_deflateSetHeader	optional/z.c	/^int scalanative_deflateSetHeader(z_streamp strm, gz_headerp head) {$/;"	f
+scalanative_deflateTune	optional/z.c	/^int scalanative_deflateTune(z_streamp strm, int good_length, int max_lazy,$/;"	f
+scalanative_dev_t	types.h	/^typedef unsigned long scalanative_dev_t;$/;"	t
+scalanative_dirent	dirent.c	/^struct scalanative_dirent {$/;"	s	file:
+scalanative_dirent_init	dirent.c	/^void scalanative_dirent_init(struct dirent *dirent,$/;"	f
+scalanative_dyndispatch	dyndispatch.c	/^void *scalanative_dyndispatch(PerfectHashMap *perfectHashMap, int key) {$/;"	f
+scalanative_e2big	posix.c	/^int scalanative_e2big() { return E2BIG; }$/;"	f
+scalanative_eacces	posix.c	/^int scalanative_eacces() { return EACCES; }$/;"	f
+scalanative_eaddrinuse	posix.c	/^int scalanative_eaddrinuse() { return EADDRINUSE; }$/;"	f
+scalanative_eafnosupport	posix.c	/^int scalanative_eafnosupport() { return EAFNOSUPPORT; }$/;"	f
+scalanative_eagain	posix.c	/^int scalanative_eagain() { return EAGAIN; }$/;"	f
+scalanative_ealready	posix.c	/^int scalanative_ealready() { return EALREADY; }$/;"	f
+scalanative_ebadf	posix.c	/^int scalanative_ebadf() { return EBADF; }$/;"	f
+scalanative_ebadmsg	posix.c	/^int scalanative_ebadmsg() { return EBADMSG; }$/;"	f
+scalanative_ebusy	posix.c	/^int scalanative_ebusy() { return EBUSY; }$/;"	f
+scalanative_ecanceled	posix.c	/^int scalanative_ecanceled() { return ECANCELED; }$/;"	f
+scalanative_echild	posix.c	/^int scalanative_echild() { return ECHILD; }$/;"	f
+scalanative_econnaborted	posix.c	/^int scalanative_econnaborted() { return ECONNABORTED; }$/;"	f
+scalanative_econnrefused	posix.c	/^int scalanative_econnrefused() { return ECONNREFUSED; }$/;"	f
+scalanative_econnreset	posix.c	/^int scalanative_econnreset() { return ECONNRESET; }$/;"	f
+scalanative_edeadlk	posix.c	/^int scalanative_edeadlk() { return EDEADLK; }$/;"	f
+scalanative_edestaddrreq	posix.c	/^int scalanative_edestaddrreq() { return EDESTADDRREQ; }$/;"	f
+scalanative_edom	wrap.c	/^int scalanative_edom() { return EDOM; }$/;"	f
+scalanative_edquot	posix.c	/^int scalanative_edquot() { return EDQUOT; }$/;"	f
+scalanative_eexist	posix.c	/^int scalanative_eexist() { return EEXIST; }$/;"	f
+scalanative_efault	posix.c	/^int scalanative_efault() { return EFAULT; }$/;"	f
+scalanative_efbig	posix.c	/^int scalanative_efbig() { return EFBIG; }$/;"	f
+scalanative_ehostunreach	posix.c	/^int scalanative_ehostunreach() { return EHOSTUNREACH; }$/;"	f
+scalanative_eidrm	posix.c	/^int scalanative_eidrm() { return EIDRM; }$/;"	f
+scalanative_eilseq	wrap.c	/^int scalanative_eilseq() { return EILSEQ; }$/;"	f
+scalanative_einprogress	posix.c	/^int scalanative_einprogress() { return EINPROGRESS; }$/;"	f
+scalanative_eintr	posix.c	/^int scalanative_eintr() { return EINTR; }$/;"	f
+scalanative_einval	posix.c	/^int scalanative_einval() { return EINVAL; }$/;"	f
+scalanative_eio	posix.c	/^int scalanative_eio() { return EIO; }$/;"	f
+scalanative_eisconn	posix.c	/^int scalanative_eisconn() { return EISCONN; }$/;"	f
+scalanative_eisdir	posix.c	/^int scalanative_eisdir() { return EISDIR; }$/;"	f
+scalanative_eloop	posix.c	/^int scalanative_eloop() { return ELOOP; }$/;"	f
+scalanative_emfile	posix.c	/^int scalanative_emfile() { return EMFILE; }$/;"	f
+scalanative_emlink	posix.c	/^int scalanative_emlink() { return EMLINK; }$/;"	f
+scalanative_emsgsize	posix.c	/^int scalanative_emsgsize() { return EMSGSIZE; }$/;"	f
+scalanative_emultihup	posix.c	/^int scalanative_emultihup() { return EMULTIHOP; }$/;"	f
+scalanative_enametoolong	posix.c	/^int scalanative_enametoolong() { return ENAMETOOLONG; }$/;"	f
+scalanative_enetdown	posix.c	/^int scalanative_enetdown() { return ENETDOWN; }$/;"	f
+scalanative_enetreset	posix.c	/^int scalanative_enetreset() { return ENETRESET; }$/;"	f
+scalanative_enetunreach	posix.c	/^int scalanative_enetunreach() { return ENETUNREACH; }$/;"	f
+scalanative_enfile	posix.c	/^int scalanative_enfile() { return ENFILE; }$/;"	f
+scalanative_enobufs	posix.c	/^int scalanative_enobufs() { return ENOBUFS; }$/;"	f
+scalanative_enodata	posix.c	/^int scalanative_enodata() { return ENODATA; }$/;"	f
+scalanative_enodev	posix.c	/^int scalanative_enodev() { return ENODEV; }$/;"	f
+scalanative_enoent	posix.c	/^int scalanative_enoent() { return ENOENT; }$/;"	f
+scalanative_enoexec	posix.c	/^int scalanative_enoexec() { return ENOEXEC; }$/;"	f
+scalanative_enolck	posix.c	/^int scalanative_enolck() { return ENOLCK; }$/;"	f
+scalanative_enolink	posix.c	/^int scalanative_enolink() { return ENOLINK; }$/;"	f
+scalanative_enomem	posix.c	/^int scalanative_enomem() { return ENOMEM; }$/;"	f
+scalanative_enomsg	posix.c	/^int scalanative_enomsg() { return ENOMSG; }$/;"	f
+scalanative_enoprotoopt	posix.c	/^int scalanative_enoprotoopt() { return ENOPROTOOPT; }$/;"	f
+scalanative_enospc	posix.c	/^int scalanative_enospc() { return ENOSPC; }$/;"	f
+scalanative_enosr	posix.c	/^int scalanative_enosr() { return ENOSR; }$/;"	f
+scalanative_enostr	posix.c	/^int scalanative_enostr() { return ENOSTR; }$/;"	f
+scalanative_enosys	posix.c	/^int scalanative_enosys() { return ENOSYS; }$/;"	f
+scalanative_enotconn	posix.c	/^int scalanative_enotconn() { return ENOTCONN; }$/;"	f
+scalanative_enotdir	posix.c	/^int scalanative_enotdir() { return ENOTDIR; }$/;"	f
+scalanative_enotempty	posix.c	/^int scalanative_enotempty() { return ENOTEMPTY; }$/;"	f
+scalanative_enotrecoverable	posix.c	/^int scalanative_enotrecoverable() { return ENOTRECOVERABLE; }$/;"	f
+scalanative_enotsock	posix.c	/^int scalanative_enotsock() { return ENOTSOCK; }$/;"	f
+scalanative_enotsup	posix.c	/^int scalanative_enotsup() { return ENOTSUP; }$/;"	f
+scalanative_enotty	posix.c	/^int scalanative_enotty() { return ENOTTY; }$/;"	f
+scalanative_environ	posix.c	/^char **scalanative_environ() { return environ; }$/;"	f
+scalanative_enxio	posix.c	/^int scalanative_enxio() { return ENXIO; }$/;"	f
+scalanative_eopnotsupp	posix.c	/^int scalanative_eopnotsupp() { return EOPNOTSUPP; }$/;"	f
+scalanative_eoverflow	posix.c	/^int scalanative_eoverflow() { return EOVERFLOW; }$/;"	f
+scalanative_eownerdead	posix.c	/^int scalanative_eownerdead() { return EOWNERDEAD; }$/;"	f
+scalanative_eperm	posix.c	/^int scalanative_eperm() { return EPERM; }$/;"	f
+scalanative_epipe	posix.c	/^int scalanative_epipe() { return EPIPE; }$/;"	f
+scalanative_eproto	posix.c	/^int scalanative_eproto() { return EPROTO; }$/;"	f
+scalanative_eprotonosupport	posix.c	/^int scalanative_eprotonosupport() { return EPROTONOSUPPORT; }$/;"	f
+scalanative_eprototype	posix.c	/^int scalanative_eprototype() { return EPROTOTYPE; }$/;"	f
+scalanative_erange	wrap.c	/^int scalanative_erange() { return ERANGE; }$/;"	f
+scalanative_erofs	posix.c	/^int scalanative_erofs() { return EROFS; }$/;"	f
+scalanative_errno	wrap.c	/^int scalanative_errno() { return errno; }$/;"	f
+scalanative_espipe	posix.c	/^int scalanative_espipe() { return ESPIPE; }$/;"	f
+scalanative_esrch	posix.c	/^int scalanative_esrch() { return ESRCH; }$/;"	f
+scalanative_estale	posix.c	/^int scalanative_estale() { return ESTALE; }$/;"	f
+scalanative_etime	posix.c	/^int scalanative_etime() { return ETIME; }$/;"	f
+scalanative_etimedout	posix.c	/^int scalanative_etimedout() { return ETIMEDOUT; }$/;"	f
+scalanative_etxtbsy	posix.c	/^int scalanative_etxtbsy() { return ETXTBSY; }$/;"	f
+scalanative_ewouldblock	posix.c	/^int scalanative_ewouldblock() { return EWOULDBLOCK; }$/;"	f
+scalanative_exdev	posix.c	/^int scalanative_exdev() { return EXDEV; }$/;"	f
+scalanative_f_dupfd	fcntl.c	/^int scalanative_f_dupfd() { return F_DUPFD; }$/;"	f
+scalanative_f_getfd	fcntl.c	/^int scalanative_f_getfd() { return F_GETFD; }$/;"	f
+scalanative_f_getfl	fcntl.c	/^int scalanative_f_getfl() { return F_GETFL; }$/;"	f
+scalanative_f_getlk	fcntl.c	/^int scalanative_f_getlk() { return F_GETLK; }$/;"	f
+scalanative_f_getown	fcntl.c	/^int scalanative_f_getown() { return F_GETOWN; }$/;"	f
+scalanative_f_ok	unistd.c	/^int scalanative_f_ok() { return F_OK; }$/;"	f
+scalanative_f_setfd	fcntl.c	/^int scalanative_f_setfd() { return F_SETFD; }$/;"	f
+scalanative_f_setfl	fcntl.c	/^int scalanative_f_setfl() { return F_SETFL; }$/;"	f
+scalanative_f_setlk	fcntl.c	/^int scalanative_f_setlk() { return F_SETLK; }$/;"	f
+scalanative_f_setlkw	fcntl.c	/^int scalanative_f_setlkw() { return F_SETLKW; }$/;"	f
+scalanative_f_setown	fcntl.c	/^int scalanative_f_setown() { return F_SETOWN; }$/;"	f
+scalanative_fchmod	stat.c	/^int scalanative_fchmod(int fd, mode_t mode) { return fchmod(fd, mode); }$/;"	f
+scalanative_fd_set	posix/sys/select.c	/^struct scalanative_fd_set {$/;"	s	file:
+scalanative_freeaddrinfo	posix/netdb.c	/^void scalanative_freeaddrinfo(struct scalanative_addrinfo *addr) {$/;"	f
+scalanative_fsblkcnt_t	types.h	/^typedef unsigned long scalanative_fsblkcnt_t;$/;"	t
+scalanative_fsfilcnt_t	types.h	/^typedef unsigned long scalanative_fsfilcnt_t;$/;"	t
+scalanative_fstat	stat.c	/^int scalanative_fstat(int fildes, struct scalanative_stat *buf) {$/;"	f
+scalanative_fstatvfs	statvfs.c	/^int scalanative_fstatvfs(int fd, struct scalanative_statvfs *buf) {$/;"	f
+scalanative_getaddrinfo	posix/netdb.c	/^int scalanative_getaddrinfo(char *name, char *service,$/;"	f
+scalanative_getgrgid	grp.c	/^int scalanative_getgrgid(scalanative_gid_t gid, struct scalanative_group *buf) {$/;"	f
+scalanative_getgrnam	grp.c	/^int scalanative_getgrnam(char *name, struct scalanative_group *buf) {$/;"	f
+scalanative_getnameinfo	posix/netdb.c	/^int scalanative_getnameinfo(struct scalanative_sockaddr *addr,$/;"	f
+scalanative_getpwnam	pwd.c	/^int scalanative_getpwnam(char *name, struct scalanative_passwd *buf) {$/;"	f
+scalanative_getpwuid	pwd.c	/^int scalanative_getpwuid(scalanative_uid_t uid,$/;"	f
+scalanative_getsockname	posix/sys/socket.c	/^int scalanative_getsockname(int socket, struct scalanative_sockaddr *address,$/;"	f
+scalanative_getsockopt	posix/sys/socket.c	/^int scalanative_getsockopt(int socket, int level, int option_name,$/;"	f
+scalanative_gid_t	types.h	/^typedef unsigned int scalanative_gid_t;$/;"	t
+scalanative_group	grp.c	/^struct scalanative_group {$/;"	s	file:
+scalanative_group_copy	grp.c	/^void scalanative_group_copy(struct group *group,$/;"	f
+scalanative_gzclearerr	optional/z.c	/^void scalanative_gzclearerr(gzFile file) { return gzclearerr(file); }$/;"	f
+scalanative_gzclose	optional/z.c	/^int scalanative_gzclose(gzFile file) { return gzclose(file); }$/;"	f
+scalanative_gzdirect	optional/z.c	/^int scalanative_gzdirect(gzFile file) { return gzdirect(file); }$/;"	f
+scalanative_gzdopen	optional/z.c	/^gzFile scalanative_gzdopen(int fd, char *mode) { return gzdopen(fd, mode); }$/;"	f
+scalanative_gzeof	optional/z.c	/^int scalanative_gzeof(gzFile file) { return gzeof(file); }$/;"	f
+scalanative_gzerror	optional/z.c	/^const char *scalanative_gzerror(gzFile file, int *errnum) {$/;"	f
+scalanative_gzflush	optional/z.c	/^int scalanative_gzflush(gzFile file, int flush) { return gzflush(file, flush); }$/;"	f
+scalanative_gzgetc	optional/z.c	/^int scalanative_gzgetc(gzFile file) { return gzgetc(file); }$/;"	f
+scalanative_gzgets	optional/z.c	/^char *scalanative_gzgets(gzFile file, char *buf, int len) {$/;"	f
+scalanative_gzopen	optional/z.c	/^gzFile scalanative_gzopen(char *path, char *mode) { return gzopen(path, mode); }$/;"	f
+scalanative_gzprintf	optional/z.c	/^int scalanative_gzprintf(gzFile file, char *format, ...) {$/;"	f
+scalanative_gzputc	optional/z.c	/^int scalanative_gzputc(gzFile file, int c) { return gzputc(file, c); }$/;"	f
+scalanative_gzputs	optional/z.c	/^int scalanative_gzputs(gzFile file, char *s) { return gzputs(file, s); }$/;"	f
+scalanative_gzread	optional/z.c	/^int scalanative_gzread(gzFile file, voidp buf, unsigned int len) {$/;"	f
+scalanative_gzrewind	optional/z.c	/^int scalanative_gzrewind(gzFile file) { return gzrewind(file); }$/;"	f
+scalanative_gzseek	optional/z.c	/^z_off_t scalanative_gzseek(gzFile file, z_off_t offset, int whence) {$/;"	f
+scalanative_gzsetparams	optional/z.c	/^int scalanative_gzsetparams(gzFile file, int level, int strategy) {$/;"	f
+scalanative_gztell	optional/z.c	/^z_off_t scalanative_gztell(gzFile file) { return gztell(file); }$/;"	f
+scalanative_gzungetc	optional/z.c	/^int scalanative_gzungetc(int c, gzFile file) { return gzungetc(c, file); }$/;"	f
+scalanative_gzwrite	optional/z.c	/^int scalanative_gzwrite(gzFile file, voidpc buf, unsigned int len) {$/;"	f
+scalanative_htonl	posix/arpa/inet.c	/^uint32_t scalanative_htonl(uint32_t arg) { return htonl(arg); }$/;"	f
+scalanative_htons	posix/arpa/inet.c	/^uint16_t scalanative_htons(uint16_t arg) { return htons(arg); }$/;"	f
+scalanative_in6_addr	posix/netinet/in.h	/^struct scalanative_in6_addr {$/;"	s
+scalanative_in_addr	posix/netinet/in.h	/^struct scalanative_in_addr {$/;"	s
+scalanative_inet_addr	posix/arpa/inet.c	/^in_addr_t scalanative_inet_addr(char *in) { return inet_addr(in); }$/;"	f
+scalanative_inet_ntoa	posix/arpa/inet.c	/^char *scalanative_inet_ntoa(struct scalanative_in_addr *in) {$/;"	f
+scalanative_inet_ntop	posix/arpa/inet.c	/^const char *scalanative_inet_ntop(int af, const void *src, char *dst,$/;"	f
+scalanative_inet_pton	posix/arpa/inet.c	/^int scalanative_inet_pton(int af, const char *src, void *dst) {$/;"	f
+scalanative_inflate	optional/z.c	/^int scalanative_inflate(z_streamp strm, int flush) {$/;"	f
+scalanative_inflateBack	optional/z.c	/^int scalanative_inflateBack(z_streamp strm, in_func in, void *in_desc,$/;"	f
+scalanative_inflateBackEnd	optional/z.c	/^int scalanative_inflateBackEnd(z_streamp strm) { return inflateBackEnd(strm); }$/;"	f
+scalanative_inflateBackInit	optional/z.c	/^int scalanative_inflateBackInit(z_streamp strm, int windowBits,$/;"	f
+scalanative_inflateCopy	optional/z.c	/^int scalanative_inflateCopy(z_streamp dest, z_streamp source) {$/;"	f
+scalanative_inflateEnd	optional/z.c	/^int scalanative_inflateEnd(z_streamp strm) { return inflateEnd(strm); }$/;"	f
+scalanative_inflateGetHeader	optional/z.c	/^int scalanative_inflateGetHeader(z_streamp strm, gz_headerp head) {$/;"	f
+scalanative_inflateInit	optional/z.c	/^int scalanative_inflateInit(z_streamp strm) { return inflateInit(strm); }$/;"	f
+scalanative_inflateInit2	optional/z.c	/^int scalanative_inflateInit2(z_streamp strm, int windowBits) {$/;"	f
+scalanative_inflateMark	optional/z.c	/^int scalanative_inflateMark(z_streamp strm) { return inflateMark(strm); }$/;"	f
+scalanative_inflatePrime	optional/z.c	/^int scalanative_inflatePrime(z_streamp strm, int bits, int value) {$/;"	f
+scalanative_inflateReset	optional/z.c	/^int scalanative_inflateReset(z_streamp strm) { return inflateReset(strm); }$/;"	f
+scalanative_inflateReset2	optional/z.c	/^int scalanative_inflateReset2(z_streamp strm, int windowBits) {$/;"	f
+scalanative_inflateSetDictionary	optional/z.c	/^int scalanative_inflateSetDictionary(z_streamp strm, Bytef *dictionary,$/;"	f
+scalanative_inflateSync	optional/z.c	/^int scalanative_inflateSync(z_streamp strm) { return inflateSync(strm); }$/;"	f
+scalanative_init	gc/boehm/gc.c	/^void scalanative_init() { GC_init(); }$/;"	f
+scalanative_init	gc/immix/ImmixGC.c	/^void scalanative_init() {$/;"	f
+scalanative_init	gc/none/gc.c	/^void scalanative_init() {$/;"	f
+scalanative_ino_t	types.h	/^typedef unsigned long long scalanative_ino_t;$/;"	t
+scalanative_ioctl	posix/sys/ioctl.c	/^int scalanative_ioctl(int fd, long int request, void *argp) {$/;"	f
+scalanative_iovec	posix/sys/uio.c	/^struct scalanative_iovec {$/;"	s	file:
+scalanative_libc_bufsiz	wrap.c	/^unsigned int scalanative_libc_bufsiz() { return BUFSIZ; }$/;"	f
+scalanative_libc_eof	wrap.c	/^int scalanative_libc_eof() { return EOF; }$/;"	f
+scalanative_libc_exit_failure	wrap.c	/^int scalanative_libc_exit_failure() { return EXIT_FAILURE; }$/;"	f
+scalanative_libc_exit_success	wrap.c	/^int scalanative_libc_exit_success() { return EXIT_SUCCESS; }$/;"	f
+scalanative_libc_filename_max	wrap.c	/^unsigned int scalanative_libc_filename_max() { return FILENAME_MAX; }$/;"	f
+scalanative_libc_fopen_max	wrap.c	/^unsigned int scalanative_libc_fopen_max() { return FOPEN_MAX; }$/;"	f
+scalanative_libc_huge_val	wrap.c	/^double scalanative_libc_huge_val() { return HUGE_VAL; }$/;"	f
+scalanative_libc_huge_valf	wrap.c	/^float scalanative_libc_huge_valf() { return HUGE_VALF; }$/;"	f
+scalanative_libc_iofbf	wrap.c	/^int scalanative_libc_iofbf() { return _IOFBF; }$/;"	f
+scalanative_libc_iolbf	wrap.c	/^int scalanative_libc_iolbf() { return _IOLBF; }$/;"	f
+scalanative_libc_ionbf	wrap.c	/^int scalanative_libc_ionbf() { return _IONBF; }$/;"	f
+scalanative_libc_l_tmpnam	wrap.c	/^unsigned int scalanative_libc_l_tmpnam() { return L_tmpnam; }$/;"	f
+scalanative_libc_math_errhandling	wrap.c	/^int scalanative_libc_math_errhandling() { return math_errhandling; }$/;"	f
+scalanative_libc_rand_max	wrap.c	/^int scalanative_libc_rand_max() { return RAND_MAX; }$/;"	f
+scalanative_libc_seek_cur	wrap.c	/^int scalanative_libc_seek_cur() { return SEEK_CUR; }$/;"	f
+scalanative_libc_seek_end	wrap.c	/^int scalanative_libc_seek_end() { return SEEK_END; }$/;"	f
+scalanative_libc_seek_set	wrap.c	/^int scalanative_libc_seek_set() { return SEEK_SET; }$/;"	f
+scalanative_libc_sig_dfl	wrap.c	/^sig_handler_t scalanative_libc_sig_dfl() { return SIG_DFL; }$/;"	f
+scalanative_libc_sig_err	wrap.c	/^sig_handler_t scalanative_libc_sig_err() { return SIG_ERR; }$/;"	f
+scalanative_libc_sig_ign	wrap.c	/^sig_handler_t scalanative_libc_sig_ign() { return SIG_IGN; }$/;"	f
+scalanative_libc_sigabrt	wrap.c	/^int scalanative_libc_sigabrt() { return SIGABRT; }$/;"	f
+scalanative_libc_sigfpe	wrap.c	/^int scalanative_libc_sigfpe() { return SIGFPE; }$/;"	f
+scalanative_libc_sigill	wrap.c	/^int scalanative_libc_sigill() { return SIGILL; }$/;"	f
+scalanative_libc_sigint	wrap.c	/^int scalanative_libc_sigint() { return SIGINT; }$/;"	f
+scalanative_libc_sigsegv	wrap.c	/^int scalanative_libc_sigsegv() { return SIGSEGV; }$/;"	f
+scalanative_libc_sigterm	wrap.c	/^int scalanative_libc_sigterm() { return SIGTERM; }$/;"	f
+scalanative_libc_stderr	wrap.c	/^void *scalanative_libc_stderr() { return stderr; }$/;"	f
+scalanative_libc_stdin	wrap.c	/^void *scalanative_libc_stdin() { return stdin; }$/;"	f
+scalanative_libc_stdout	wrap.c	/^void *scalanative_libc_stdout() { return stdout; }$/;"	f
+scalanative_libc_tmp_max	wrap.c	/^unsigned int scalanative_libc_tmp_max() { return TMP_MAX; }$/;"	f
+scalanative_link	unistd.c	/^int scalanative_link(char *oldpath, char *newpath) {$/;"	f
+scalanative_linkat	unistd.c	/^int scalanative_linkat(int fd1, char *path1, int fd2, char *path2, int flag) {$/;"	f
+scalanative_listen	posix/sys/socket.c	/^int scalanative_listen(int socket, int backlog) {$/;"	f
+scalanative_little_endian	platform.c	/^int scalanative_little_endian() {$/;"	f
+scalanative_lstat	stat.c	/^int scalanative_lstat(char *path, struct scalanative_stat *buf) {$/;"	f
+scalanative_math_errexcept	wrap.c	/^int scalanative_math_errexcept() { return MATH_ERREXCEPT; }$/;"	f
+scalanative_math_errno	wrap.c	/^int scalanative_math_errno() { return MATH_ERRNO; }$/;"	f
+scalanative_mkdir	stat.c	/^int scalanative_mkdir(char *path, mode_t mode) { return mkdir(path, mode); }$/;"	f
+scalanative_mode_t	types.h	/^typedef unsigned int scalanative_mode_t;$/;"	t
+scalanative_nano_time	time.cpp	/^extern "C" long long scalanative_nano_time() { return steady_clock(); }$/;"	f
+scalanative_nlink_t	types.h	/^typedef unsigned long scalanative_nlink_t;$/;"	t
+scalanative_ntohl	posix/arpa/inet.c	/^uint32_t scalanative_ntohl(uint32_t arg) { return ntohl(arg); }$/;"	f
+scalanative_ntohs	posix/arpa/inet.c	/^uint16_t scalanative_ntohs(uint16_t arg) { return ntohs(arg); }$/;"	f
+scalanative_o_append	fcntl.c	/^int scalanative_o_append() { return O_APPEND; }$/;"	f
+scalanative_o_creat	fcntl.c	/^int scalanative_o_creat() { return O_CREAT; }$/;"	f
+scalanative_o_nonblock	fcntl.c	/^int scalanative_o_nonblock() { return O_NONBLOCK; }$/;"	f
+scalanative_o_rdonly	fcntl.c	/^int scalanative_o_rdonly() { return O_RDONLY; }$/;"	f
+scalanative_o_rdwr	fcntl.c	/^int scalanative_o_rdwr() { return O_RDWR; }$/;"	f
+scalanative_o_trunc	fcntl.c	/^int scalanative_o_trunc() { return O_TRUNC; }$/;"	f
+scalanative_o_wronly	fcntl.c	/^int scalanative_o_wronly() { return O_WRONLY; }$/;"	f
+scalanative_off_t	types.h	/^typedef long long scalanative_off_t;$/;"	t
+scalanative_opendir	dirent.c	/^DIR *scalanative_opendir(const char *name) { return opendir(name); }$/;"	f
+scalanative_passwd	pwd.c	/^struct scalanative_passwd {$/;"	s	file:
+scalanative_passwd_copy	pwd.c	/^void scalanative_passwd_copy(struct passwd *passwd,$/;"	f
+scalanative_path_max	limits.c	/^int scalanative_path_max() { return NAME_MAX; }$/;"	f
+scalanative_platform_is_windows	platform.c	/^int scalanative_platform_is_windows() {$/;"	f
+scalanative_r_ok	unistd.c	/^int scalanative_r_ok() { return R_OK; }$/;"	f
+scalanative_readdir	dirent.c	/^int scalanative_readdir(DIR *dirp, struct scalanative_dirent *buf) {$/;"	f
+scalanative_readv	posix/sys/uio.c	/^ssize_t scalanative_readv(int d, struct scalanative_iovec *buf, int iovcnt) {$/;"	f
+scalanative_recv	posix/sys/socket.c	/^int scalanative_recv(int socket, void *buffer, size_t length, int flags) {$/;"	f
+scalanative_s_irgrp	stat.c	/^mode_t scalanative_s_irgrp() { return S_IRGRP; }$/;"	f
+scalanative_s_iroth	stat.c	/^mode_t scalanative_s_iroth() { return S_IROTH; }$/;"	f
+scalanative_s_irusr	stat.c	/^mode_t scalanative_s_irusr() { return S_IRUSR; }$/;"	f
+scalanative_s_isblk	stat.c	/^int scalanative_s_isblk(mode_t mode) { return S_ISBLK(mode); }$/;"	f
+scalanative_s_ischr	stat.c	/^int scalanative_s_ischr(mode_t mode) { return S_ISCHR(mode); }$/;"	f
+scalanative_s_isdir	stat.c	/^int scalanative_s_isdir(mode_t mode) { return S_ISDIR(mode); }$/;"	f
+scalanative_s_isfifo	stat.c	/^int scalanative_s_isfifo(mode_t mode) { return S_ISFIFO(mode); }$/;"	f
+scalanative_s_isgid	stat.c	/^mode_t scalanative_s_isgid() { return S_ISGID; }$/;"	f
+scalanative_s_islnk	stat.c	/^int scalanative_s_islnk(mode_t mode) { return S_ISLNK(mode); }$/;"	f
+scalanative_s_isreg	stat.c	/^int scalanative_s_isreg(mode_t mode) { return S_ISREG(mode); }$/;"	f
+scalanative_s_issock	stat.c	/^int scalanative_s_issock(mode_t mode) { return S_ISSOCK(mode); }$/;"	f
+scalanative_s_isuid	stat.c	/^mode_t scalanative_s_isuid() { return S_ISUID; }$/;"	f
+scalanative_s_isvtx	stat.c	/^mode_t scalanative_s_isvtx() { return S_ISVTX; }$/;"	f
+scalanative_s_iwgrp	stat.c	/^mode_t scalanative_s_iwgrp() { return S_IWGRP; }$/;"	f
+scalanative_s_iwoth	stat.c	/^mode_t scalanative_s_iwoth() { return S_IWOTH; }$/;"	f
+scalanative_s_iwusr	stat.c	/^mode_t scalanative_s_iwusr() { return S_IWUSR; }$/;"	f
+scalanative_s_ixgrp	stat.c	/^mode_t scalanative_s_ixgrp() { return S_IXGRP; }$/;"	f
+scalanative_s_ixoth	stat.c	/^mode_t scalanative_s_ixoth() { return S_IXOTH; }$/;"	f
+scalanative_s_ixusr	stat.c	/^mode_t scalanative_s_ixusr() { return S_IXUSR; }$/;"	f
+scalanative_sa_family_t	posix/sys/socket.h	/^typedef unsigned short scalanative_sa_family_t;$/;"	t
+scalanative_select	posix/sys/select.c	/^int scalanative_select(int nfds, struct scalanative_fd_set *readfds,$/;"	f
+scalanative_send	posix/sys/socket.c	/^int scalanative_send(int socket, void *buffer, size_t length, int flags) {$/;"	f
+scalanative_set_errno	wrap.c	/^void scalanative_set_errno(int value) { errno = value; }$/;"	f
+scalanative_setsockopt	posix/sys/socket.c	/^int scalanative_setsockopt(int socket, int level, int option_name,$/;"	f
+scalanative_shutdown	posix/sys/socket.c	/^int scalanative_shutdown(int socket, int how) { return shutdown(socket, how); }$/;"	f
+scalanative_sockaddr	posix/sys/socket_conversions.h	/^struct scalanative_sockaddr {$/;"	s
+scalanative_sockaddr_in	posix/netinet/in.h	/^struct scalanative_sockaddr_in {$/;"	s
+scalanative_sockaddr_in6	posix/netinet/in.h	/^struct scalanative_sockaddr_in6 {$/;"	s
+scalanative_sockaddr_storage	posix/sys/socket_conversions.h	/^struct scalanative_sockaddr_storage {$/;"	s
+scalanative_socket	posix/sys/socket.c	/^int scalanative_socket(int domain, int type, int protocol) {$/;"	f
+scalanative_st_nosuid	statvfs.c	/^unsigned long scalanative_st_nosuid() { return ST_NOSUID; }$/;"	f
+scalanative_st_rdonly	statvfs.c	/^unsigned long scalanative_st_rdonly() { return ST_RDONLY; }$/;"	f
+scalanative_stat	stat.c	/^int scalanative_stat(char *path, struct scalanative_stat *buf) {$/;"	f
+scalanative_stat	stat.c	/^struct scalanative_stat {$/;"	s	file:
+scalanative_stat_init	stat.c	/^void scalanative_stat_init(struct stat *stat,$/;"	f
+scalanative_statvfs	statvfs.c	/^int scalanative_statvfs(char *path, struct scalanative_statvfs *buf) {$/;"	f
+scalanative_statvfs	statvfs.c	/^struct scalanative_statvfs {$/;"	s	file:
+scalanative_statvfs_copy	statvfs.c	/^void scalanative_statvfs_copy(struct statvfs *statvfs,$/;"	f
+scalanative_stderr_fileno	unistd.c	/^int scalanative_stderr_fileno() { return STDERR_FILENO; }$/;"	f
+scalanative_stdin_fileno	unistd.c	/^int scalanative_stdin_fileno() { return STDIN_FILENO; }$/;"	f
+scalanative_stdout_fileno	unistd.c	/^int scalanative_stdout_fileno() { return STDOUT_FILENO; }$/;"	f
+scalanative_symlink	unistd.c	/^int scalanative_symlink(char *path1, char *path2) {$/;"	f
+scalanative_symlinkat	unistd.c	/^int scalanative_symlinkat(char *path1, int fd, char *path2) {$/;"	f
+scalanative_throw	eh.cpp	/^void scalanative_throw(void *obj) { throw scalanative::ExceptionWrapper(obj); }$/;"	f
+scalanative_time_t	types.h	/^typedef long int scalanative_time_t;$/;"	t
+scalanative_timeval	posix/sys/select.c	/^struct scalanative_timeval {$/;"	s	file:
+scalanative_uid_t	types.h	/^typedef unsigned int scalanative_uid_t;$/;"	t
+scalanative_uncompress	optional/z.c	/^int scalanative_uncompress(Bytef *dest, uLongf *destLen, Bytef *source,$/;"	f
+scalanative_unwind_get_context	unwind.c	/^int scalanative_unwind_get_context(void *context) {$/;"	f
+scalanative_unwind_get_proc_name	unwind.c	/^int scalanative_unwind_get_proc_name(void *cursor, char *buffer, size_t length,$/;"	f
+scalanative_unwind_get_reg	unwind.c	/^int scalanative_unwind_get_reg(void *cursor, int regnum,$/;"	f
+scalanative_unwind_init_local	unwind.c	/^int scalanative_unwind_init_local(void *cursor, void *context) {$/;"	f
+scalanative_unwind_step	unwind.c	/^int scalanative_unwind_step(void *cursor) {$/;"	f
+scalanative_utime	utime.c	/^int scalanative_utime(char *path, struct utimbuf *times) {$/;"	f
+scalanative_w_ok	unistd.c	/^int scalanative_w_ok() { return W_OK; }$/;"	f
+scalanative_windows_get_user_country	platform.c	/^char *scalanative_windows_get_user_country() {$/;"	f
+scalanative_windows_get_user_lang	platform.c	/^char *scalanative_windows_get_user_lang() {$/;"	f
+scalanative_writev	posix/sys/uio.c	/^ssize_t scalanative_writev(int fildes, struct scalanative_iovec *buf,$/;"	f
+scalanative_x_ok	unistd.c	/^int scalanative_x_ok() { return X_OK; }$/;"	f
+scalanative_zlibCompileFlags	optional/z.c	/^uLong scalanative_zlibCompileFlags() { return zlibCompileFlags(); }$/;"	f
+scalanative_zlibVersion	optional/z.c	/^const char *scalanative_zlibVersion() { return zlibVersion(); }$/;"	f
+scanative_libc_infinity	wrap.c	/^float scanative_libc_infinity() { return INFINITY; }$/;"	f
+scanative_libc_nan	wrap.c	/^float scanative_libc_nan() { return NAN; }$/;"	f
+sig_handler_t	wrap.c	/^typedef void (*sig_handler_t)(int);$/;"	t	file:
+sin6_addr	posix/netinet/in.h	/^    struct scalanative_in6_addr sin6_addr;$/;"	m	struct:scalanative_sockaddr_in6	typeref:struct:scalanative_sockaddr_in6::scalanative_in6_addr
+sin6_family	posix/netinet/in.h	/^    scalanative_sa_family_t sin6_family;$/;"	m	struct:scalanative_sockaddr_in6
+sin6_flowinfo	posix/netinet/in.h	/^    uint32_t sin6_flowinfo;$/;"	m	struct:scalanative_sockaddr_in6
+sin6_port	posix/netinet/in.h	/^    in_port_t sin6_port;$/;"	m	struct:scalanative_sockaddr_in6
+sin6_scope_id	posix/netinet/in.h	/^    uint32_t sin6_scope_id;$/;"	m	struct:scalanative_sockaddr_in6
+sin_addr	posix/netinet/in.h	/^    struct scalanative_in_addr sin_addr;$/;"	m	struct:scalanative_sockaddr_in	typeref:struct:scalanative_sockaddr_in::scalanative_in_addr
+sin_family	posix/netinet/in.h	/^    scalanative_sa_family_t sin_family;$/;"	m	struct:scalanative_sockaddr_in
+sin_port	posix/netinet/in.h	/^    in_port_t sin_port;$/;"	m	struct:scalanative_sockaddr_in
+size	gc/immix/LargeAllocator.h	/^    size_t size;$/;"	m	struct:__anon2
+size	gc/immix/datastructures/Bitmap.h	/^    size_t size;$/;"	m	struct:__anon18
+size	gc/immix/headers/LineHeader.h	/^    uint16_t size;$/;"	m	struct:__anon14
+size	gc/immix/headers/ObjectHeader.h	/^    int64_t size;$/;"	m	struct:__anon9
+size	gc/immix/headers/ObjectHeader.h	/^    uint32_t size;$/;"	m	struct:__anon8
+size	perfecthashmap.h	/^    int size;$/;"	m	struct:PerfectHashMap
+smallHeapSize	gc/immix/Heap.h	/^    size_t smallHeapSize;$/;"	m	struct:__anon19
+ss_family	posix/sys/socket_conversions.h	/^    scalanative_sa_family_t ss_family;$/;"	m	struct:scalanative_sockaddr_storage
+st_blksize	stat.c	/^        st_blksize; \/** A file system-specific preferred I\/O block size for$/;"	m	struct:scalanative_stat	file:
+st_blocks	stat.c	/^        st_blocks; \/** Number of blocks allocated for this object. *\/$/;"	m	struct:scalanative_stat	file:
+st_dev	stat.c	/^    scalanative_dev_t st_dev; \/** Device ID of device containing file. *\/$/;"	m	struct:scalanative_stat	file:
+st_gid	stat.c	/^    scalanative_gid_t st_gid; \/** Group ID of file. *\/$/;"	m	struct:scalanative_stat	file:
+st_ino	stat.c	/^    scalanative_ino_t st_ino; \/** File serial number. *\/$/;"	m	struct:scalanative_stat	file:
+st_mode	stat.c	/^    scalanative_mode_t st_mode;   \/** Mode of file (see below). *\/$/;"	m	struct:scalanative_stat	file:
+st_nlink	stat.c	/^    scalanative_nlink_t st_nlink; \/** Number of hard links to the file. *\/$/;"	m	struct:scalanative_stat	file:
+st_rdev	stat.c	/^        st_rdev; \/** Device ID (if file is character or block special). *\/$/;"	m	struct:scalanative_stat	file:
+st_size	stat.c	/^        st_size;                  \/** For regular files, the file size in bytes.$/;"	m	struct:scalanative_stat	file:
+st_uid	stat.c	/^    scalanative_uid_t st_uid; \/** User ID of file. *\/$/;"	m	struct:scalanative_stat	file:
+stack	gc/immix/State.c	/^Stack *stack = NULL;$/;"	v
+start	optional/re2.h	/^    long start; \/* inclusive start index for bytevector *\/$/;"	m	struct:scalanative_cre2_range_t
+steady_clock	time.cpp	/^long long steady_clock() {$/;"	f
+to	gc/immix/headers/ObjectHeader.h	/^        int32_t to;$/;"	m	struct:__anon9::__anon11
+toDoubleComplex	complex.c	/^double complex toDoubleComplex(double sndc[2]) {$/;"	f
+toFloatComplex	complex.c	/^float complex toFloatComplex(float snfc[2]) { return *(float complex *)snfc; }$/;"	f
+toNativeDoubleComplex	complex.c	/^double *toNativeDoubleComplex(double complex dc, double res[2]) {$/;"	f
+toNativeFloatComplex	complex.c	/^float *toNativeFloatComplex(float complex fc, float res[2]) {$/;"	f
+to_scalanative_cre2_anchor	optional/re2.cpp	/^to_scalanative_cre2_anchor(scalanative_cre2_anchor_t anchor) {$/;"	f	file:
+tv_sec	posix/sys/select.c	/^    time_t tv_sec;$/;"	m	struct:scalanative_timeval	file:
+tv_usec	posix/sys/select.c	/^    suseconds_t tv_usec;$/;"	m	struct:scalanative_timeval	file:
+type	gc/immix/headers/ObjectHeader.h	/^    uint8_t type;$/;"	m	struct:__anon8
+ubyte_t	gc/immix/GCTypes.h	/^typedef uint8_t ubyte_t;$/;"	t
+values	perfecthashmap.h	/^    void **values;$/;"	m	struct:PerfectHashMap
+word_t	gc/immix/GCTypes.h	/^typedef uintptr_t word_t;$/;"	t
+words	gc/immix/datastructures/Bitmap.h	/^    word_t *words;$/;"	m	struct:__anon18

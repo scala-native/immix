@@ -52,9 +52,9 @@ unwind.c
 utime.c
 wrap.c
 # none
-gc/none/gc.c
+# gc/none/gc.c
 # boehm
-gc/boehm/gc.c
+# gc/boehm/gc.c
 # immix
 gc/immix/Allocator.c
 gc/immix/Allocator.h

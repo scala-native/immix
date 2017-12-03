@@ -74,7 +74,7 @@ Heap *Heap_Create(size_t initialSize) {
  * If allocation fails, because there is not enough memory available, it will
  * trigger a collection of both the small and the large heap.
  */
-word_t *Heap_AllocLarge(Heap *heap, uint32_t objectSize) {
+word_t *Heap_AllocLarge(Heap *heap, uint32_t objectSize, bool isObjectArray) {
 
     // Add header
     uint32_t size = objectSize + OBJECT_HEADER_SIZE;
@@ -89,6 +89,7 @@ word_t *Heap_AllocLarge(Heap *heap, uint32_t objectSize) {
         ObjectHeader *objectHeader = &object->header;
 
         Object_SetObjectType(objectHeader, object_large);
+        Object_SetObjectArray(objectHeader, isObjectArray);
         Object_SetSize(objectHeader, size);
         return Object_ToMutatorAddress(object);
     } else {
@@ -109,13 +110,14 @@ word_t *Heap_AllocLarge(Heap *heap, uint32_t objectSize) {
             ObjectHeader *objectHeader = &object->header;
 
             Object_SetObjectType(objectHeader, object_large);
+            Object_SetObjectArray(objectHeader, isObjectArray);
             Object_SetSize(objectHeader, size);
             return Object_ToMutatorAddress(object);
         }
     }
 }
 
-word_t *Heap_allocSmallSlow(Heap *heap, uint32_t size) {
+word_t *Heap_allocSmallSlow(Heap *heap, uint32_t size, bool isObjectArray) {
 
     Heap_Collect(heap, stack);
 
@@ -124,6 +126,7 @@ word_t *Heap_allocSmallSlow(Heap *heap, uint32_t size) {
         ObjectHeader *objectHeader = &object->header;
 
         Object_SetObjectType(objectHeader, object_standard);
+        Object_SetObjectArray(objectHeader, isObjectArray);
         Object_SetSize(objectHeader, size);
         Object_SetAllocated(objectHeader);
     }
@@ -144,7 +147,7 @@ word_t *Heap_allocSmallSlow(Heap *heap, uint32_t size) {
     return Object_ToMutatorAddress(object);
 }
 
-INLINE word_t *Heap_AllocSmall(Heap *heap, uint32_t objectSize) {
+INLINE word_t *Heap_AllocSmall(Heap *heap, uint32_t objectSize, bool isObjectArray) {
     // Add header
     uint32_t size = objectSize + OBJECT_HEADER_SIZE;
 
@@ -155,22 +158,24 @@ INLINE word_t *Heap_AllocSmall(Heap *heap, uint32_t objectSize) {
     if (object != NULL) {
         ObjectHeader *objectHeader = &object->header;
         Object_SetObjectType(objectHeader, object_standard);
+        Object_SetObjectArray(objectHeader, isObjectArray);
         Object_SetSize(objectHeader, size);
         Object_SetAllocated(objectHeader);
 
+
         return Object_ToMutatorAddress(object);
     } else {
-        return Heap_allocSmallSlow(heap, size);
+        return Heap_allocSmallSlow(heap, size, isObjectArray);
     }
 }
 
-word_t *Heap_Alloc(Heap *heap, uint32_t objectSize) {
+word_t *Heap_Alloc(Heap *heap, uint32_t objectSize, bool isObjectArray) {
     assert(objectSize % WORD_SIZE == 0);
 
     if (objectSize + OBJECT_HEADER_SIZE >= LARGE_BLOCK_SIZE) {
-        return Heap_AllocLarge(heap, objectSize);
+        return Heap_AllocLarge(heap, objectSize, isObjectArray);
     } else {
-        return Heap_AllocSmall(heap, objectSize);
+        return Heap_AllocSmall(heap, objectSize, isObjectArray);
     }
 }
 

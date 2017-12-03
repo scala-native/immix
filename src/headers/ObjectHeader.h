@@ -13,6 +13,7 @@ typedef enum {
     object_large = 0x2,
 } ObjectType;
 
+
 typedef enum {
     object_free = 0x0,
     object_allocated = 0x1,
@@ -23,6 +24,7 @@ typedef struct {
     uint32_t size;
     uint8_t type;
     uint8_t flag;
+    uint8_t isObjectArray;
 } ObjectHeader;
 
 typedef struct {
@@ -107,6 +109,14 @@ static inline Object *Object_FromMutatorAddress(word_t *address) {
 
 static inline word_t *Object_ToMutatorAddress(Object *object) {
     return (word_t *)&object->rtti;
+}
+
+static inline bool Object_IsObjectArray(ObjectHeader *objectHeader) {
+    return objectHeader->isObjectArray != 0;
+}
+
+static inline void Object_SetObjectArray(ObjectHeader *objectHeader, bool isObjectArray) {
+    objectHeader->isObjectArray = isObjectArray ? 1 : 0;
 }
 
 #endif // IMMIX_OBJECTHEADER_H

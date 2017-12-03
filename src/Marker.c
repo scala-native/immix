@@ -9,7 +9,6 @@
 #include "Block.h"
 #include "StackoverflowHandler.h"
 
-extern int __object_array_id;
 extern word_t *__modules;
 extern int __modules_size;
 extern word_t **__stack_bottom;
@@ -57,8 +56,8 @@ void Marker_markConservative(Heap *heap, Stack *stack, word_t *address) {
 void Marker_Mark(Heap *heap, Stack *stack) {
     while (!Stack_IsEmpty(stack)) {
         Object *object = Stack_Pop(stack);
-
-        if (object->rtti->rt.id == __object_array_id) {
+        ObjectHeader *objectHeader = &object->header;
+        if (Object_IsObjectArray(objectHeader)) {
             // remove header and rtti from size
             size_t size =
                 Object_Size(&object->header) - OBJECT_HEADER_SIZE - WORD_SIZE;

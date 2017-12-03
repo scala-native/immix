@@ -19,10 +19,10 @@ void scalanative_init() {
     stack = Stack_Alloc(INITIAL_STACK_SIZE);
 }
 
-void *scalanative_alloc(void *info, size_t size) {
+void *scalanative_alloc(void *info, size_t size, int isObjectArray) {
     size = MathUtils_RoundToNextMultiple(size, WORD_SIZE);
 
-    void **alloc = (void **)Heap_Alloc(heap, size);
+    void **alloc = (void **)Heap_Alloc(heap, size, isObjectArray ? true : false);
     *alloc = info;
     return (void *)alloc;
 }
@@ -30,7 +30,7 @@ void *scalanative_alloc(void *info, size_t size) {
 void *scalanative_alloc_small(void *info, size_t size) {
     size = MathUtils_RoundToNextMultiple(size, WORD_SIZE);
 
-    void **alloc = (void **)Heap_AllocSmall(heap, size);
+    void **alloc = (void **)Heap_AllocSmall(heap, size, false);
     *alloc = info;
     return (void *)alloc;
 }
@@ -38,13 +38,13 @@ void *scalanative_alloc_small(void *info, size_t size) {
 void *scalanative_alloc_large(void *info, size_t size) {
     size = MathUtils_RoundToNextMultiple(size, WORD_SIZE);
 
-    void **alloc = (void **)Heap_AllocLarge(heap, size);
+    void **alloc = (void **)Heap_AllocLarge(heap, size, false);
     *alloc = info;
     return (void *)alloc;
 }
 
 void *scalanative_alloc_atomic(void *info, size_t size) {
-    return scalanative_alloc(info, size);
+    return scalanative_alloc(info, size, false);
 }
 
 void scalanative_collect() { Heap_Collect(heap, stack); }

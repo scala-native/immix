@@ -36,9 +36,9 @@ static inline bool heap_isObjectInHeap(Heap *heap, Object *object) {
 }
 
 Heap *Heap_Create(size_t initialHeapSize);
-word_t *Heap_Alloc(Heap *heap, uint32_t objectSize);
-word_t *Heap_AllocSmall(Heap *heap, uint32_t objectSize);
-word_t *Heap_AllocLarge(Heap *heap, uint32_t objectSize);
+word_t *Heap_Alloc(Heap *heap, uint32_t objectSize, bool isObjectArray);
+word_t *Heap_AllocSmall(Heap *heap, uint32_t objectSize, bool isObjectArray);
+word_t *Heap_AllocLarge(Heap *heap, uint32_t objectSize, bool isObjectArray);
 
 void Heap_Collect(Heap *heap, Stack *stack);
 

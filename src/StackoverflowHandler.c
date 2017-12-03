@@ -71,7 +71,7 @@ bool StackOverflowHandler_overflowMark(Heap *heap, Stack *stack,
                                        Object *object) {
     ObjectHeader *objectHeader = &object->header;
     if (Object_IsMarked(objectHeader)) {
-        if (object->rtti->rt.id == __object_array_id) {
+        if (Object_IsObjectArray(objectHeader)) {
             size_t size =
                 Object_Size(&object->header) - OBJECT_HEADER_SIZE - WORD_SIZE;
             size_t nbWords = size / WORD_SIZE;
